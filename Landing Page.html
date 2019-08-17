@@ -6,19 +6,87 @@
     <title>TouchMi 4 Max EDGE</title>
 
 <style>
+  html {
+      background-color: darkgreen;
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: 1.5;
+  }
+ /* Navbar */
+ .navbar {
+     display: flex;
+     position: sticky;
+     height: auto;
+     width: 100%;
+     justify-content: space-around;
+     align-content: flex-start;
+     align-items: center;
+ }
+
+        /* Navbar Links */
+        .navbar a {
+            font-size: 1em;
+            outline: none;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Main Menu Dropdown Containers */
+        .smartphones-container, .computers-container a {
+            overflow: hidden;
+        }
+
+        /* Submenu Dropdown Containers */
+        .touchmi-container, .supaphone-container, .megawhiz-container, .laptops-container,
+        .bog-container, .hyperbook-container, .thinkbrick-container {
+            overflow: hidden;
+        }
+
+        /* Main Menu Dropdown Buttons */
+        .smartphone-container .smartphones-button, .computers-container .computers-button {
+            font-size: 1em;
+            border: none;
+            outline: none;
+            padding: 14px 16px;
+            background-color: "";
+            font-family: inherit;
+            margin: 0 auto;
+        }
+
+        /* Submenu Dropdown Buttons */
+        .touchmi-container .touchmi-button, .supaphone-container .supaphone-button, .megawhiz-container .megawhiz-button,
+        .laptops-container .laptop-button, .bog-container .bog-button, .hyperbook-container .hyperbook-button, .thinkbrick-container .thinkbrick-button {
+            font-size: 1em;
+            border: none;
+            outline: none;
+            padding: 14px 16px;
+            background-color: "";
+            font-family: inherit;
+            margin: 0 auto;
+        }
+
+        /* Navbar Links Hover Color */
+        .navbar a:hover, .touchmi-container:hover .touchmi-button, .supaphone-container:hover .supaphone-button, .megawhiz-container:hover .megawhiz-button,
+        .laptops-container:hover .laptop-button, .bog-container:hover .bog-button, .hyperbook-container:hover .hyperbook-button, .thinkbrick-container:hover .thinkbrick-button {
+            color: red;
+            border-top: 2px solid darkgray;
+        }
+
+
 
 </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <a href="#Home" alt="Home">Home</a>
             <div class="smartphones-container">
                 <button class="smartphones-button">Smartphones</button>
                     <div class="smartphones-list">
                         <div class="touchmi-container">
                             <button class="touchmi-button">TouchMi Collection</button>
-                                <div class="touchmi-content">
+                                <div class="touchmi-list">
                                     <a href="#TouchMi" alt="TouchMi">TouchMi</a>
                                     <a href="#TouchMi 2" alt="TouchMi 2">TouchMi 2</a>
                                     <a href="#TouchMi 2GSM" alt="TouchMi 2GSM">TouchMi 2GSM</a>
@@ -31,9 +99,9 @@
                                     <a href="#TouchMi 4 Max EDGE" alt="TouchMi 4 Max EDGE">TouchMi 4 Max EDGE</a>
                                 </div>
                         </div>
-                        <div class="supaphone-dropdown">
-                            <button class="supaphone-list">SupaPhone Collection</button>
-                            <div class="supaphone-content">
+                        <div class="supaphone-container">
+                            <button class="supaphone-button">SupaPhone Collection</button>
+                            <div class="supaphone-list">
                                 <a href="#supaphone" alt="Supa">SupaPhone</a>
                                 <a href="#supaphone one" alt="SupaPhone One">Supa One</a>
                                 <a href="#supaphone one ultra " alt="SupaPhone One Ultra">SupaPhone One Ultra</a>
@@ -42,9 +110,9 @@
                                 <a href="#supaphone dupa one ultra maxxx 5G" alt="SupaPhone Dupa One Ultra MAXXX 5G">SupaPhone Dupa Ultra MAXXX 5G</a>
                             </div>
                         </div>
-                        <div class="megawhiz-dropdown">
+                        <div class="megawhiz-container">
                             <button class="megawhiz-list">MegaWhiz Collection</button>
-                            <div class="megawhiz-content">
+                            <div class="megawhiz-list">
                                 <a href="#megawhiz" alt="MegaWhiz">MegaWhiz</a>
                                 <a href="#megawhiz master" alt="MegaWhiz Master">MegaWhiz Master 4G</a>
                                 <a href="#megawhiz ARD 4G" alt="MegaWhiz ARD 4G">MegaWhiz ARD 4G</a>
@@ -52,44 +120,42 @@
                         </div>
                      </div>
             </div>
-            <div class="computers-dropdown">
-                <button class="computers-list">Computers</button>
-                    <div class="computers-content">
-                        <button class="laptop-button">Laptops</button>
-                        <div class="laptop-list">
-                            <div classs="laptop-list-content">
-                            <button class="bog-button">Battalion Of Gamers</button>
-                                <div class="bog-list">
-                                    <div class="bog-content">
-                                        <a href="#BOG-1000" alt="BOG-1000">BOG-1000</a>
-                                        <a href="#BOG-1250" alt="BOG-1250">BOG-1250</a>
-                                        <a href="#BOG-1500" alt="BOG-1500">BOG-1500</a>
-                                        <a href="#BOG-1750" alt="BOG-1750">BOG-1750</a>
+            <div class="computers-container">
+                <button class="computers-button">Computers</button>
+                    <div class="computers-list">
+                        <div class="laptop-container">
+                            <button class="laptop-button">Laptops</button>
+                                <div class="laptop-list">
+                                    <div classs="bog-container">
+                                        <button class="bog-button">Battalion Of Gamers</button>
+                                            <div class="bog-list">
+                                                <a href="#BOG-1000" alt="BOG-1000">BOG-1000</a>
+                                                <a href="#BOG-1250" alt="BOG-1250">BOG-1250</a>
+                                                <a href="#BOG-1500" alt="BOG-1500">BOG-1500</a>
+                                                <a href="#BOG-1750" alt="BOG-1750">BOG-1750</a>
+                                            </div>
                                     </div>
-                                </div>
-                            <button class="hyperbook-dropdown">HyperBook</button>
-                                <div class="hyperbook-list">
-                                    <div class="hyperbook-content">
-                                        <a href="#hyperbook-11" alt="HyperBook-11">HyperBook-11</a>
-                                        <a href="#hyperbook-15" alt="HyperBook-15">Hyperbook-15</a>
-                                        <a href="#hyperbook-17" alt="HyperBook-17">HyperBook-17</a>
+                                    <div class="hyperbook-container">    
+                                        <button class="hyperbook-dropdown">HyperBook</button>
+                                            <div class="hyperbook-list">
+                                                <a href="#hyperbook-11" alt="HyperBook-11">HyperBook-11</a>
+                                                <a href="#hyperbook-15" alt="HyperBook-15">Hyperbook-15</a>
+                                                <a href="#hyperbook-17" alt="HyperBook-17">HyperBook-17</a>
+                                            </div>
                                     </div>
-                                </div>
-                            <button class="thinkbrick-dropdown">ThinkBrick</button>
-                                <div class="thinkbrick-list">
-                                    <div class="thinkbrick-content">
-                                        <a href="#thinkbrick-4" alt="ThinkBrick-4">ThinkBrick-4</a>
-                                        <a href="#thinkbrick-8" alt="ThinkBrick-8">ThinkBrick-8</a>
-                                        <a href="#thinkbrick-11" alt="ThinkBrick-11">ThinkBrick-11</a>
-                                        <a href="#thinkbrick-infinity" alt="ThinkBrick Infinity">ThinkBrick Infinity</a>
+                                    <div class="thinkbrick-container">
+                                        <button class="thinkbrick-dropdown">ThinkBrick</button>
+                                            <div class="thinkbrick-list">
+                                                <a href="#thinkbrick-4" alt="ThinkBrick-4">ThinkBrick-4</a>
+                                                <a href="#thinkbrick-8" alt="ThinkBrick-8">ThinkBrick-8</a>
+                                                <a href="#thinkbrick-11" alt="ThinkBrick-11">ThinkBrick-11</a>
+                                                <a href="#thinkbrick-infinity" alt="ThinkBrick Infinity">ThinkBrick Infinity</a>
+                                            </div>
                                     </div>
                                 </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <a href="#Computers" alt="Computers">Computers</a>
             <a href="#Cars" alt="Cars">Cars</a>
             <a href="#Business Solutions" alt="Business Solutions">Business Solutions</a>
             <a href="#Our Ethos" alt="Our Ethos">Our Ethos</a>
