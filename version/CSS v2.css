@@ -1,0 +1,142 @@
+/* CSS Styling */
+
+html {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* NavBar Styling */
+nav {
+    display: flex;
+    position: sticky;
+    text-align: center;
+}
+
+nav ul {
+    margin: none;
+    padding: none;
+    list-style: none;
+    width: 100vw;
+}
+
+nav a {
+    display: block;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: inherit;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 #333;
+    position: relative;
+}
+
+.navbar {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.navbar li {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar > li {
+
+    border-bottom: 3px solid red;
+    margin-right: 1px;
+}
+
+.navbar > li a {
+    margin-bottom: 1px;
+}
+
+.navbar > li:hover
+.navbar > li:hover a {
+    border-bottom-color: red;
+}
+
+.navbar li:hover a {
+    color: orange;
+}
+
+.navbar > li:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+.navbar > li:first-child > a {
+    border-radius: 3px 0 0 3px;
+}
+
+.navbar > li:last-child {
+    border-radius: 0 0 3px 0;
+    margin-right: 0;
+}
+
+.navbar > li:last-child > a {
+    border-radius: 0 3px 0 0;
+}
+
+.navbar li li a {
+    margin-top: 1px;
+}
+
+/* Navbar Function */
+.navbar li a:first-child:nth-last-child(3):before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: none;
+    top: 50vh;
+    right: 50vw;
+}
+
+/* Nav Submenu Position */
+.navbar ul {
+    position: absolute;
+    white-space: nowrap;
+    border-top: 3px solid red;
+    z-index: 1;
+    left: -99999px;
+}
+.navbar > li:hover > ul {
+    display: block;
+    margin-top: 5px;
+    min-width: 100%;
+}
+.navbar > li li:hover > ul {
+    left: 100%;
+    margin-left: 1px;
+    top: -1px;
+}
+.navbar > li li li:hover > ul {
+    left: 100%;
+    margin-left: 5px;
+    min-width: 100%;
+}
+/* Navbar Arrow Hover Style */
+.navbar > li > a:first-child:nth-last-child(2):before {
+    border-top-color: black;
+}
+.nav > li:hover > a:first-child:nth-last-child(2):before {
+    border: 5px solid transparent;
+    border-bottom-color: orange;
+    margin-top: -5px;
+}
+.nav li li > a:first-child:nth-last-child(2):before {
+    border-left-color: #aaa;
+    margin-top: -5px;
+}
+.nav li li:hover > a:first-child:nth-last-child(2):before {
+    border: 5px solid transparent;
+    border-right-color: orange;
+    right: 10px;
+}
+ /* Logo */
+ .logo {
+     height: auto;
+     width: 50px;
+}

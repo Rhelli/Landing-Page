@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
+
+@-webkit-keyframes shadow-inset-center{0%{box-shadow:inset 0 0 0 0 transparent}100%{box-shadow:inset 0 0 14px 0 rgba(0,0,0,.5)}}@keyframes shadow-inset-center{0%{box-shadow:inset 0 0 0 0 transparent}100%{box-shadow:inset 0 0 14px 0 rgba(0,0,0,.5)}}
+
+html {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+/* Logo */
+.logo {
+    height: 80px;
+    width: auto;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+/* NAVBAR */
+    /* Navbar Conatiner */
+    .nav-container {
+        width: 100%;
+        height: 80px;
+        background: #eee;
+    }
+    .navbar {
+        display: flex;
+        max-width: 100%;
+        height: 80px;
+        text-align: center;
+        white-space: wrap;
+        word-break: break-word;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+        /* Navbar Styling */
+        li {
+            list-style: none;
+        }
+        li a {
+            text-decoration: none;
+        }
+        .navbar li {
+            float: left;
+            padding: 0;
+            text-align: left;
+            background: transparent;
+        }
+        .navbar li:first-child {
+            border: none;
+        }
+        .navbar li a {
+            padding: 14px 16px;
+            color: black;
+            font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+            font-weight: 900;
+            text-align: left;
+            font-size: 1.1rem;
+            line-height: 2em;
+        }
+        .navbar li:hover {
+            background: #0E6453;
+            width: auto;
+        }
+        .navbar li:hover a {
+            color: black;
+            /* transition: ease-in 0.25s;
+            -moz-transition: ease-in 0.25s;
+            -webkit-transition: ease-in 0.25s; */
+        }
+        .dropdown {
+            display: block;
+            position: absolute;
+            width: 200px;
+            top: 65px;
+            opacity: 1;
+            background-color: transparent;
+            font-size: 1em;
+            visibility: hidden;
+            padding: 0;
+            margin: 0;
+            /* transition: ease-out 0.15s; */
+            /* transition-delay: 0.35s; */
+            /* -moz-transition: ease-out 0.15s; */
+            /* -webkit-transition: ease-out 0.15s; */
+        }
+        .hassubs {
+            padding: 14px 16px;
+        }
+
+        /* First Sub Level */
+        .sub {
+            position: relative;
+            font-size: 0.8em !important;
+            width: 200px;
+            border-left: none !important;
+            color: #A01631;
+        }
+        .subs:last-child {
+            border: none !important;
+        }
+        .hassubs:hover .dropdown, .hassubs .hassubs:hover .dropdown {
+            opacity: 0.9;
+            visibility: visible;
+            transition: ease-in 0.25s;
+            -moz-transition: ease-in 0.25s;
+            -webkit-transition: ease-in 0.25s;
+        }
+        .navbar li:hover ul a, .navbar li ul li ul li:hover {
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            background-color: #052821;
+            color: white;
+            border-radius: 2px;
+            opacity: 0.8;
+            width: 190px;
+            height: auto;
+        }
+        .navbar li ul li:hover a, .navbar li ul li ul li:hover a {
+            color: yellow;
+        }
+
+        /* Second Sub Level */
+        .hassubs .hassubs .dropdown .sub {
+            position: relative;
+            top: 20px;
+            left: 80px;
+            width: 210px;
+            background-color: #16A085;
+            border-radius: 2px;
+        }
+        .hassubs .hassubs .dropdown {
+            position: absolute;
+            width: 160px;
+            left: 140px;
+            top: 0px;
+            opacity: 1;
+            z-index: 5;
+            visibility: hidden;
+        }
+

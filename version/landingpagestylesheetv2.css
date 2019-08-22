@@ -2,8 +2,6 @@ html {
     font-size: 16px;
     text-align: center;
     letter-spacing: 1.5;
-    margin: 0px;
-    padding: 0px;
 
 }
 
@@ -27,15 +25,12 @@ html {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin-top: 5px;
 }
 
 /* Subnav Menu Container */
 .subnav {
     overflow: hidden;
-    height: 65px;
-    border: none;
-    outline: none;
+    height: 50px;
 }
 
 /* Subnav Buttons */
@@ -47,22 +42,20 @@ html {
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    margin-top: 5px;
+    margin: 0;
 }
 
 /* Nav Links Hover Color */
 .navbar a:hover, .subnav:hover .smartphones-button, .subnav:hover .computing-button {
-    color: black;
-    border-top: 3px solid red;
+    background-color: darkgray;
 }
 
 /* Subnav Content Styling */
 .smartphones-content, .computing-content {
     display: none;
     position: absolute;
-    left: 0;
     top: 60px;
-    background-color: blue;
+    background-color: transaprent;
     width: auto;
     height: 50px;
     text-align: center;
@@ -71,17 +64,15 @@ html {
 
 /* Subnav Links Styling */
 .smartphones-content a, .computing-content a {
-    color: red;
+    color: black;
     text-decoration: none;
-    position: relative;
-    top: 12px;
 }
 
 /* Subnav Links Hover Color */
 .smarphones-content .computing-content a:hover {
     background-color: "";
     color: black;
-
+    border-top: 3px solid red;
 }
 
 /* Open Subnav Content On Container Hover */
