@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
-
-@-webkit-keyframes shadow-inset-center{0%{box-shadow:inset 0 0 0 0 transparent}100%{box-shadow:inset 0 0 14px 0 rgba(0,0,0,.5)}}@keyframes shadow-inset-center{0%{box-shadow:inset 0 0 0 0 transparent}100%{box-shadow:inset 0 0 14px 0 rgba(0,0,0,.5)}}
-
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900');
+@-webkit-keyframes text-pop-up-top{0%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:none}100%{-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3)}}@keyframes text-pop-up-top{0%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:none}100%{-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3)}}
 html {
     font-size: 16px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: center;
@@ -17,18 +16,25 @@ body {
 }
 /* Logo */
 .logo {
-    height: 80px;
+    position: relative;
+    top: -8px;
+    height: 65px;
     width: auto;
     padding: 0 auto;
     margin: 0 auto;
 }
+#navbar-anim {
+    -webkit-animation: text-pop-up-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 
 /* NAVBAR */
     /* Navbar Conatiner */
     .nav-container {
         width: 100%;
-        height: 80px;
-        background: #eee;
+        height: 65px;
+        background: #0B5043;
     }
     .navbar {
         display: flex;
@@ -61,38 +67,29 @@ body {
         }
         .navbar li a {
             padding: 14px 16px;
-            color: black;
-            font-family: 'Ubuntu', 'Courier New', Courier, monospace;
-            font-weight: 900;
+            color: white;
+            font-family: 'Titillium Web', 'Courier New', Courier, monospace;
+            font-weight: 600;
             text-align: left;
-            font-size: 1.1rem;
-            line-height: 2em;
-        }
-        .navbar li:hover {
-            background: #0E6453;
-            width: auto;
+            font-size: 1.3rem;
+            line-height: 1.2em;
+            vertical-align: top;
         }
         .navbar li:hover a {
-            color: black;
-            /* transition: ease-in 0.25s;
-            -moz-transition: ease-in 0.25s;
-            -webkit-transition: ease-in 0.25s; */
+            color: #cf455c;
+            font-weight: 700;
         }
         .dropdown {
             display: block;
             position: absolute;
             width: 200px;
-            top: 65px;
+            top: 62px;
             opacity: 1;
             background-color: transparent;
             font-size: 1em;
             visibility: hidden;
             padding: 0;
             margin: 0;
-            /* transition: ease-out 0.15s; */
-            /* transition-delay: 0.35s; */
-            /* -moz-transition: ease-out 0.15s; */
-            /* -webkit-transition: ease-out 0.15s; */
         }
         .hassubs {
             padding: 14px 16px;
@@ -112,9 +109,6 @@ body {
         .hassubs:hover .dropdown, .hassubs .hassubs:hover .dropdown {
             opacity: 0.9;
             visibility: visible;
-            transition: ease-in 0.25s;
-            -moz-transition: ease-in 0.25s;
-            -webkit-transition: ease-in 0.25s;
         }
         .navbar li:hover ul a, .navbar li ul li ul li:hover {
             display: flex;
@@ -122,6 +116,7 @@ body {
             overflow: hidden;
             background-color: #052821;
             color: white;
+            font-weight: 300;
             border-radius: 2px;
             opacity: 0.8;
             width: 190px;
