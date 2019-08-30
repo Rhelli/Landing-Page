@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900');
 @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(0px);transform:translateY(0px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-10px);transform:translateY(-10px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
-@-webkit-keyframes swing-in-left-fwd{0%{-webkit-transform:rotateY(100deg);transform:rotateY(100deg);-webkit-transform-origin:left;transform-origin:left;opacity:0}100%{-webkit-transform:rotateY(0);transform:rotateY(0);-webkit-transform-origin:left;transform-origin:left;opacity:1}}@keyframes swing-in-left-fwd{0%{-webkit-transform:rotateY(100deg);transform:rotateY(100deg);-webkit-transform-origin:left;transform-origin:left;opacity:0}100%{-webkit-transform:rotateY(0);transform:rotateY(0);-webkit-transform-origin:left;transform-origin:left;opacity:1}}
+@-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-15px);transform:translateX(-15px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+@-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-10px);transform:translateY(-10px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+
 html {
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
@@ -10,6 +13,7 @@ html {
     text-align: center;
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 body {
     padding: 0;
@@ -25,28 +29,86 @@ body {
     margin: 0 auto;
     border-radius: 10px;
 }
+.min-logo {
+    position: relative;
+    top: 1px;
+    height: 42px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px; 
+}
+.min-menu {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    height: 20px;
+    width: auto;
+    opacity: 0.7;
+    padding: 0;
+    margin: 0;
+}
 
 /* NAVBAR */
-    /* Navbar Conatiner */
+    /* Navbar & Container */
     .nav-container {
         width: 100%;
-        height: 71px;
-        /* background-color: #052821; */
+        height: 45px;
+        border-bottom: 0.5px solid #C5E9F8;
         background-image: linear-gradient( 1.9deg,  rgba(252,250,250,1) 5.7%, rgba(221,219,219,1) 87.7% );
-    }   
+    } 
     .navbar {
         display: flex;
+        visibility: hidden;
         max-width: 100%;
         height: 80px;
         text-align: center;
         white-space: wrap;
         word-break: break-word;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-content: center;
         align-items: center;
         margin: 0 auto;
         padding: 0;
     }
+    /* Navbar & Container Hover Behaviour */
+    .nav-container:hover .navbar {
+        visibility: visible;
+    }
+    .nav-container:hover .min-logo, .nav-container:hover .min-menu {
+        display: none;
+    }
+    .nav-container:hover {
+        height: 71px;
+        z-index: 1;
+        border-bottom: none;
+        background-image: linear-gradient( 1.9deg,  rgba(252,250,250,1) 5.7%, rgba(221,219,219,1) 87.7% );
+        -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    /* Navbar Elements */
+    .login {
+        position: relative;
+        top: -2px;
+        left: 100px;
+        font-weight: 500 !important;
+        background: linear-gradient( 180deg,  rgba(119,203,239,0.42) -0.5%, rgba(100,196,237,0.38) 101.5% );
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px rgba(235,235,235,0.5);
+        box-shadow: 0px 2px 4px rgb(38, 74, 89);
+        border: 2px linear-gradient( 179deg,  rgba(100,196,237,0.57) 1.9%, rgba(75,147,178,1) 87.5% );
+        border-radius: 10px;
+        padding: 0px 25px !important;
+    }
+    .login:hover {
+        border-top: none !important;
+        box-shadow: 0px 4px 8px #ED8D64 !important;
+        border: 2px linear-gradient( 179deg,  rgba(100,196,237,0.57) 1.9%, rgba(75,147,178,1) 87.5% );
+    }
+
         /* Navbar Styling */
         li {
             list-style: none;
@@ -55,27 +117,36 @@ body {
             text-decoration: none;
             border: none;
         }
-        .login {
-            position: relative;
-            top: -2px;
-            background-image: radial-gradient( circle farthest-corner at 49% 54%,  rgba(223,171,0,1) 0%, rgba(128,98,0,1) 78.7% );
-            color: black !important;
-            font-weight: 500 !important;
-            border-radius: 10px;
-            padding: 0px 25px !important;
-        }
         .navbar li {
             float: left;
             padding: 0;
             text-align: left;
             background: transparent;
         }
+        .navbar > li:hover > a {
+            border-top: 3px solid #ED8D64;
+            color: transparent;
+            background: #ED8D64;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-shadow: 0px 3px 3px rgba(178,106,75,0.3);
+            -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
         .navbar li:first-child {
             border: none;
         }
+        .navbar > li > a {
+            color: transparent;
+            background: #666666;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-shadow: 0px 3px 3px rgba(235,235,235,0.5);
+        }
         .navbar li a {
             padding: 14px 16px;
-            color: #4f81c7;
             font-family: 'Titillium Web', 'Courier New', Courier, monospace;
             font-weight: 300;
             text-align: left;
@@ -84,8 +155,8 @@ body {
             vertical-align: top;
         }
         .navbar li:hover a {
-            color: yellow;
-            font-weight: 500;
+            color: #ED8D64;
+            font-weight: 600;
             -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
@@ -105,48 +176,54 @@ body {
             padding: 14px 16px;
             z-index: 1;
         }
-
         /* First Sub Level */
         .sub {
             position: relative;
             font-size: 0.8em !important;
             width: 200px;
             border-left: none !important;
-            color: #A01631;
             z-index: 5;
         }
         .subs:last-child {
             border: none !important;
         }
         .hassubs:hover .dropdown, .hassubs .hassubs:hover .dropdown {
-            opacity: 0.9;
+            opacity: 0.8;
             visibility: visible;
         }
         .navbar li:hover ul a, .navbar li ul li ul li:hover {
             display: flex;
             position: relative;
             overflow: hidden;
-            background-color: #64c4ed;
-            color: white;
+            background-color: rgba(221,219,219,1);
+            color: #19313B;
             font-weight: 300;
             border-radius: 2px;
-            opacity: 0.8;
+            opacity: 0.9;
             width: 190px;
             height: auto;
         }
         .navbar li ul li:hover a, .navbar li ul li ul li:hover a {
-            color: yellow;
+            color: #ED8D64;
+            font-weight: 300;
+            opacity: 1;
         }
-
         /* Second Sub Level */
+        .navbar > li > ul > li > ul > li > a {
+            color: #19313B !important;
+        }
+        .navbar > li > ul > li > ul > li:hover > a {
+            color: #ED8D64 !important;
+            font-weight: 600;
+        }
         .hassubs .hassubs .dropdown .sub {
             position: relative;
             top: 20px;
             left: 80px;
             width: 210px;
-            background-color: #16A085;
+            background-color: rgba(221,219,219,1);
+            opacity: 0.9;
             border-radius: 2px;
-
         }
         .hassubs .hassubs .dropdown {
             position: absolute;
@@ -157,6 +234,6 @@ body {
             visibility: hidden;
         }
         .hassubs .hassubs:hover .dropdown {
-            -webkit-animation: swing-in-left-fwd 0.6s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
-	        animation: swing-in-left-fwd 0.6s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+            -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
