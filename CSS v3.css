@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900');
+@import url(https://fonts.googleapis.com/css?family=Catamaran:100,200,300,regular,500,600,700,800,900);
 @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(0px);transform:translateY(0px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-10px);transform:translateY(-10px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 @-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-15px);transform:translateX(-15px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-10px);transform:translateY(-10px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
@@ -11,15 +12,16 @@ html {
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: center;
+    height: 100vh;
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: white;
 }
 body {
     padding: 0;
     margin: 0;
 }
-/* Logo */
+/* Navbar Logos */
 .logo {
     position: relative;
     top: 0px;
@@ -52,24 +54,30 @@ body {
 /* NAVBAR */
     /* Navbar & Container */
     .nav-container {
+        position: fixed;
+        margin-top: -25px;
         width: 100%;
         height: 45px;
-        border-bottom: 0.5px solid #C5E9F8;
+        border-bottom: 0.5px solid #D6D6D6;
         background-image: linear-gradient( 1.9deg,  rgba(252,250,250,1) 5.7%, rgba(221,219,219,1) 87.7% );
+        z-index: 5555;
     } 
     .navbar {
         display: flex;
+        position: fixed;
+        margin-top: -25px;
         visibility: hidden;
-        max-width: 100%;
+        width: 100%;
         height: 80px;
-        text-align: center;
         white-space: wrap;
         word-break: break-word;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-content: center;
         align-items: center;
         margin: 0 auto;
         padding: 0;
+        z-index: 5555;
+        text-align: center;
     }
     /* Navbar & Container Hover Behaviour */
     .nav-container:hover .navbar {
@@ -80,7 +88,7 @@ body {
     }
     .nav-container:hover {
         height: 71px;
-        z-index: 1;
+        z-index: 5;
         border-bottom: none;
         background-image: linear-gradient( 1.9deg,  rgba(252,250,250,1) 5.7%, rgba(221,219,219,1) 87.7% );
         -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -91,7 +99,7 @@ body {
     .login {
         position: relative;
         top: -2px;
-        left: 100px;
+        left: 20px;
         font-weight: 500 !important;
         background: linear-gradient( 180deg,  rgba(119,203,239,0.42) -0.5%, rgba(100,196,237,0.38) 101.5% );
         -webkit-background-clip: text;
@@ -202,6 +210,7 @@ body {
             opacity: 0.9;
             width: 190px;
             height: auto;
+            z-index: 5;
         }
         .navbar li ul li:hover a, .navbar li ul li ul li:hover a {
             color: #ED8D64;
@@ -232,8 +241,227 @@ body {
             top: 0px;
             opacity: 1;
             visibility: hidden;
+            z-index: 5555;
         }
         .hassubs .hassubs:hover .dropdown {
             -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
+
+/* Image Containers & Text Divs */
+.image-order {
+    z-index: 1;
+}
+
+.front-back-image-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 25px 0px;
+    background-color: white;
+    scroll-snap-align: start;
+    z-index: 1;
+}
+.front-back-image {
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+    height: 90vh;
+    max-width: 50vw;
+}
+.landing-text {
+    position: relative;
+    top: 20px;
+    left: 0px;
+    height: 100vw;
+    width: auto;
+    /* float: left; */
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: 4px;
+    padding: 10px;
+}
+.landing-text-1 {
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    max-width: 50vw;
+    padding: 0px 0px 40px 0px;
+    margin: 0px;
+    border-bottom: 3px solid lightgray;
+}
+.landing-text-2 {
+    display: inline-block;
+    position: relative;
+    top: 70px;
+    max-width: 50vw;
+    font-size: 25px;
+    color: slategray;
+}
+.specs {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    height: auto;
+    font-family: inherit;
+    font-size: 18px;
+}
+.pre-order-button {
+    display: block;
+    position: relative;
+    top: 200px;
+    left: 5%;
+    transform: translateX(-5%);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(235,235,235,0.5);
+    box-shadow: 0px 2px 4px rgb(38, 74, 89);
+    background-image: linear-gradient( 178.4deg,  rgba(148,174,186,0.31) 3%, rgba(83,125,145,0.69) 90.7% ) !important;;
+    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    z-index: 9999;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    top: 200px;
+    left: 0px;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #537d91;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+input:checked + .slider {
+    background-color: red;
+}
+input:focus + .slider {
+    box-shadow: 0px 0 px 1px red;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+.right-image-container {
+    height: 100vh;
+    width: 100vw;
+    margin: 25px 0px;
+    scroll-snap-align: start;
+    background-color: slategray;
+    z-index: 1;
+}
+.right-image {
+    position: relative;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);    
+    right: 25px;
+    height: 90vh;
+    width: auto;
+}
+
+.back-image-container {
+    height: 100vh;
+    width: 100vw;
+    margin: 25px 0px;
+    scroll-snap-align: start;
+    background-color: black;
+    z-index: 1;
+}
+.back-image {
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    height: 100vh;
+    width: auto;
+}
+
+.top-image-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 25px 0px;
+    scroll-snap-align: start;
+    background-color: slategray;
+    z-index: 1;
+}
+.top-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-image-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 25px 0px;
+    scroll-snap-align: start;
+    background-color: black;
+    z-index: 1;
+}
+.bottom-image {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    scroll-snap-align: start;
+}
+
+.left-image-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 25px 0px;
+    background-color: slategray;
+    z-index: 1;
+}
+.left-image {
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2.5%; */
+    height: 100vh;
+    width: auto;
+    scroll-snap-align: start;
+}
