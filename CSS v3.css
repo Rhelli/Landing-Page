@@ -252,6 +252,36 @@ body {
 .image-order {
     z-index: 1;
 }
+
+/* Links Styling */
+    a:link {
+        font-weight: 700;
+        color: #23374d;
+        font-size: 1.1em;
+        padding: 0px 5px;
+    }
+    a:visited {
+        font-weight: 300;
+        color: #23374d;
+        padding: 0px 5px;
+    }
+    a:hover {
+        font-weight: 700;
+        text-decoration: 1px wavy #537d91;
+        color: #f77754;
+        background-color: #e4f2f0;
+        border-radius: 5px;
+        padding: 0px 5px;
+    }
+    a:active {
+        font-weight: 500;
+        text-decoration: 1px wavy #f77754;
+        color: #537d91;
+        padding: 0px 5px;
+    }
+
+
+
 /* Landing Image & Elements Container */
 .front-back-image-container {
     display: flex;
@@ -280,6 +310,9 @@ body {
 /* Landing Text & Elements */
 .landing-elements {
     display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
     flex-flow: column nowrap;
     margin: 5px;
     padding: 5px;
@@ -324,9 +357,9 @@ body {
         line-height: 1.5;
         letter-spacing: 1px;
         font-family: inherit;
-        font-size: 1.1em;
+        font-size: 1.3em;
         font-weight: 300;
-        padding: 30px 20px;
+        padding: 20px 20px;
     }
     .specs {
         display: block;
@@ -337,9 +370,10 @@ body {
         max-width: 50vw;
         text-align: left;
         font-family: inherit;
-        font-size: 1em;
+        font-size: 1.1em;
         font-weight: 300;
         padding: 0px 10px;
+        margin: 0
     }
     .specs > ul > li {
         list-style-type: disc !important;
@@ -348,18 +382,22 @@ body {
 /* Color Selection */
 .color-container {
     display: block;
+    position: relative;
+    /* top: -20px; */
     width: 50vw;
     height: auto;
-    padding: 30px 30px;
+    margin-top: -40px;
 }
 .color-form {
     display: flex;
     justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: flex-start;
     position: relative;
-    top: -20px;
-    max-width: 50vw;
+    max-width: 45vw;
     height: auto;
     text-align: center;
+    padding: 5px 0px;
 }
 .color-button {
     -webkit-appearance: none;
@@ -492,14 +530,14 @@ body {
     position: relative;
     top: 0px;
     text-align: left;
-    font-size: 1.9em;
+    font-size: 1.7em;
     font-family: 'Catamaran';
     font-weight: 700;
     margin: 0;
     padding: 14px 16px;
 }
 .right-image-title > h2 {
-    border-bottom: 3px solid lightgray;
+    border-bottom: 2px solid lightgray;
 }
 .right-image-blurb {
     display: block;
@@ -508,18 +546,18 @@ body {
     width: 65vw;
     height: auto;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 300;
     margin: 0;
-    padding: 14px 16px;
+    padding: 5px 16px;
 }
 .right-image-specs-container {
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: space-evenly;
+    align-items: flex-start;
     align-content: flex-start;
     position: relative;
-    top: -15px;
+    top: -20px;
     left: 25%;
     transform: translateX(-25%);
     flex-flow: row wrap;
@@ -560,7 +598,7 @@ body {
     width: 50vw;
     height: auto;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 300;
     padding: 14px 16px;
 }
@@ -591,7 +629,7 @@ body {
 }
 
 
-
+/* Back Image */
 .back-image-container {
     display: flex;
     height: 95vh;
@@ -615,6 +653,7 @@ body {
     display: flex;
     position: relative;
     flex-flow: column wrap;
+    justify-content: space-evenly;
     height: 90vh;
     width: 80vw;
     top: 50%; 
@@ -642,11 +681,13 @@ body {
     width: 65vw;
     height: auto;
     word-wrap: break-word;
+    overflow: hidden;
     text-align: left;
-    font-size: 1em;
+    font-size: 1.1rem;
     font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 1.8;
     font-family: inherit;
-    padding: 14px 16px;
 }
 .back-image-specs-container {
     display: flex;
@@ -657,7 +698,6 @@ body {
     justify-content: space-around;
     align-items: baseline;
     align-content: flex-start;
-    margin-bottom: 20px;
     border-bottom: 1px solid lightgray;
 }
 .back-image-specs-sub-container {
@@ -685,10 +725,9 @@ body {
     height: auto;
     text-align: left;
     word-wrap: break-word;
-    font-size: 1em;
+    font-size: 1.1rem;
     font-family: inherit;
     font-weight: 300;
-    padding: 10px 16px;
 
 }
 .back-image-security-icons-container {
@@ -699,12 +738,14 @@ body {
     width: 65vw;
     height: auto;
     position: relative;
-    top: -20px;
+    top: 0px;
+    padding: 0;
+    margin: 0;
 }
 .back-image-security-icons-sub-container {
     display: inline-block;
     position: relative;
-    width: 15vw;
+    width: 18vw;
     line-height: 1;
 }
 .securetech-logo {
@@ -712,7 +753,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    height: 90px;
+    height: 75px;
     width: auto;
     padding: 0;
     margin: 0;
@@ -722,7 +763,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    height: 80px;
+    height: 75px;
     width: auto;
     padding: 0;
     margin: 0;
@@ -732,7 +773,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    height: 80px;
+    height: 75px;
     width: auto;
     padding: 0;
     margin: 0;
@@ -749,7 +790,8 @@ body {
 .security-asterisk {
     position: absolute;
     height: 0.8em;
-    bottom: 10px;
+    bottom: 5px;
+    right: 5px;
     width: 65vw;
     text-align: right;
     font-size: 0.8em;
@@ -805,7 +847,8 @@ body {
     display: block;
     width: 48vw;
     height: auto;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: 500;
     font-family: inherit;
     text-align: center;
     margin: 0px 10px;
@@ -822,28 +865,30 @@ body {
 }
 .top-image-text-left-blurb {
     display: block;
-    width: 95%;
+    width: 98%;
     height: auto;
     font-family: inherit;
-    font-size: 0.95em;
+    font-size: 1em;
     font-weight: 300;
     text-align: left;
+    padding: 5px 16px;
+    margin: 0;
     word-wrap: break-word;
 }
 .sonr-icons-main-container {
     display: flex;
     justify-content: space-between;
-    align-content: flex-start;
+    align-content: center;
     align-items: baseline;
     position: relative;
     flex-flow: row wrap;
-    width: 42vw;
+    width: 45vw;
     height: auto;
-    padding: 14px 0px;
+    padding: 14px 16px;
 }
 .sonr-icons-sub-container {
     display: inline-block;
-    width: 12vw;
+    width: 25%;
     position: relative;
     text-align: center;
     line-height: 1.2;
@@ -883,11 +928,12 @@ body {
     width: 48vw;
     height: auto;
     line-height: 1.2;
+    padding: 14px 16px;
 }
 .future-sonr-icons-sub-container {
     display: inline-block;
     position: relative;
-    width: 15vw;
+    width: 25%;
     height: auto;
     text-align: center;
 }
@@ -971,8 +1017,9 @@ body {
     position: relative;
     width: 45vw;
     height: auto;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: inherit;
+    font-weight: 500;
     text-align: center;
 }
 .bottom-image-subtitle > h3 {
@@ -983,10 +1030,11 @@ body {
     position: relative;
     width: 45vw;
     height: auto;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-family: inherit;
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 1.5;
+    letter-spacing: 1.5;
     text-align: left;
 }
 .bottom-image-right-container {
@@ -1003,14 +1051,15 @@ body {
     width: 45vw;
     height: auto;
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-family: inherit;
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 1.5;
+    letter-spacing: 1.5;
 }
 .bottom-image {
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     scroll-snap-align: start;
@@ -1153,4 +1202,18 @@ body {
     margin: 0;
     padding: 0;
     z-index: 1;
+}
+.index-asterisk {
+    display: block;
+    width: 25vw;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    word-wrap: break-word;
+    text-align: right;
+    font-family: inherit;
+    font-size: 0.8em;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
 }
