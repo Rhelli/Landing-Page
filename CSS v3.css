@@ -257,7 +257,7 @@ body {
 /* Links Styling */
     a:link {
         font-weight: 700;
-        color: #23374d;
+        color: #537d91;
         font-size: 1.1em;
         padding: 0px 5px;
     }
@@ -284,7 +284,7 @@ body {
 .page-spacers {
     display: block;
     height: 5vh;
-    width: 200vw;
+    width: 100vw;
     background-color: white;
 }
 
@@ -1233,9 +1233,19 @@ footer {
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: center;
-    height: 40vh;
+    height: 45vh;
     width: 100vw;
-    background-color: slategray;
+    background: #563d62;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #563d62), color-stop(49%, #715182), color-stop(50%, #725183), color-stop(100%, #644773));
+    background: -webkit-linear-gradient(top, #563d62 0%, #715182 49%, #725183 50%, #644773 100%);
+    background: -o-linear-gradient(top, #563d62 0%, #715182 49%, #725183 50%, #644773 100%);
+    background: -ms-linear-gradient(top, #563d62 0%, #715182 49%, #725183 50%, #644773 100%);
+    background: linear-gradient(to bottom, #563d62 0%, #715182 49%, #725183 50%, #644773 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#563d62', endColorstr='#644773', GradientType=0 );
+    background: -moz-linear-gradient(top, #563d62 0%, #715182 49%, #725183 50%, #644773 100%);
+    color: white;
+    padding: 0;
+    margin: 0;
 }
     /* Footer Company Info */
     .footer-company-container {
@@ -1244,7 +1254,7 @@ footer {
         justify-content: space-evenly;
         flex-wrap: nowrap;
         flex: 0 1 10vw;
-        height: 40vh;
+        height: 45vh;
         width: auto;
         border-right: 1px solid darkgray;
     }
@@ -1289,10 +1299,9 @@ footer {
         display: inline-flex;
         flex-flow: column nowrap;
         flex: 0 1 60vw;
-        height: 40vh;
+        height: 45vh;
         width: auto;
         font-family: inherit;
-        background-color: gray;
     }
 
         /* SignUp Text */
@@ -1300,11 +1309,10 @@ footer {
             display: block;
             height: auto;
             width: auto;
-            background-color: pink;
         }
             .signup-header {
                 display: block;
-                font-size: 1.8em;
+                font-size: 1.7em;
                 letter-spacing: 2px;
                 line-height: 0;
                 padding: 0;
@@ -1321,8 +1329,10 @@ footer {
         .signup-form-container {
             display: flex;
             flex-flow: row nowrap;
-            height: 30vh;
-            background-color: yellow;
+            height: 40vh;
+            border: 3px solid #725183;
+            border-radius: 5px;
+            margin: 3px 0px;
         }
         /* Email Sign Up */
         .email-signup-container {
@@ -1330,11 +1340,11 @@ footer {
             height: auto;
             width: 50%;
             flex-flow: column nowrap;
-            background-color: orange;
+            border-right: 2px solid #725183;
         }
             .form-row {
                 display: block;
-                width: 100%;
+                width: 98%;
                 height: 5vh;
                 padding: 0px 0px;
                 margin: 0;
@@ -1342,29 +1352,54 @@ footer {
             }
             .form-label {
                 display: inline-block;
-                width: 48%;
+                width: 40%;
                 height: 4vh;
                 text-align: right;
-                background-color: red;
+                font-size: 1em;
+                font-weight: 300;
             }
             .form-input {
                 display: inline-block;
                 width: 48%;
                 height: 4vh;
-                background-color: blue;
             }
             .input-fields {
-                width: 10vw;
-                height: 3vh;
+                width: 12vw;
+                height: 4vh;
+                background: transparent;
+                border: none;
+                font-size: 0.8em;
+                padding-left: 5px;
+                border-bottom: 2px solid slategray;
+            }
+            ::placeholder {
+                color: white;
             }
             .signup-text {
                 font-size: 0.6em;
                 font-weight: 300;
             }
+            .signup-disclaimer {
+                display: block;
+                height: auto; 
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                margin-top: -10px;
+            }
             .signup-button {
                 width: 15vw;
                 height: 5vh;
-                font-size: 1em;
+                font-size: 1.3em;
+                font-weight: 300;
+                -moz-box-shadow: inset 0px 2px 10px 0px rgba(61,82,51,1);
+                box-shadow: inset 0px 2px 10px 0px rgba(61,82,51,1);
+                -webkit-box-shadow: inset 0px 2px 10px 0px rgba(61,82,51,1);
+                background-color: #628351;
+                border: 2px solid #567347;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
             }
         
         /* Social Media SignUp */
@@ -1376,12 +1411,91 @@ footer {
             height: auto;
             width: 50%;
             flex-flow: column nowrap;
-            background-color: slateblue;
+            font-family: inherit;
+            background: #FEAC5E;  /* fallback for old browsers */
+            background: linear-gradient(to top, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: -webkit-linear-gradient(to top, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+
         }
+            .social-title {
+                display: block;
+                position: relative;
+                height: auto;
+                width: auto;
+                font-size: 1.2em;
+                font-weight: 400;
+                padding: 0;
+                margin: 0;
+            }    
+
             .social-buttons {
                 display: block;
                 height: 5vh;
                 width: 18vw;
+                font-size: 1.2em;
+                font-weight: 300;
+                border-radius: 2px;
+                border-color: none;
+                color: white;
             }
+            .facebook-button {
+                background-color: #3b5998;
+                -webkit-box-shadow: inset 0px 2px 19px -6px rgba(37,56,95,1);
+                -moz-box-shadow: inset 0px 2px 19px -6px rgba(37,56,95,1);
+                box-shadow: inset 0px 2px 19px -6px rgba(37,56,95,1);
+                border: 3px solid #344E85;
+                font-weight: 300;
+                cursor: pointer;
+
+            }
+            .google-button {
+                background-color: #DB4437;
+                -webkit-box-shadow: inset 0px 2px 19px -6px rgba(110,34,27,1);
+                -moz-box-shadow: inset 0px 2px 19px -6px rgba(110,34,27,1);
+                box-shadow: inset 0px 2px 19px -6px rgba(110,34,27,1);
+                border: 3px solid #C03C30;
+                cursor: pointer;
+            }
+            .twitter-button {
+                background-color: #1DA1F2;
+                -webkit-box-shadow: inset 0px 2px 19px -6px rgba(14,81,121,1);
+                -moz-box-shadow: inset 0px 2px 19px -6px rgba(14,81,121,1);
+                box-shadow: inset 0px 2px 19px -6px rgba(14,81,121,1);
+                border: 3px solid #198DD4;
+                cursor: pointer;
+            }
+            .bank-button {
+                background-color: #983B59;
+                -webkit-box-shadow: inset 0px 2px 19px -6px rgba(76,29,44,1);
+                -moz-box-shadow: inset 0px 2px 19px -6px rgba(76,29,44,1);
+                box-shadow: inset 0px 2px 19px -6px rgba(76,29,44,1);
+                border: 3px solid #85344E;
+                cursor: pointer;
+            }
+
+    /* Hotlinks Container */
+    .hotlinks-container {
+        display: inline-flex;
+        flex-flow: column nowrap;
+        height: 45vh;
+        width: auto;
+        flex: 0 1 15vw;
+        padding: 0;
+        margin: 0;
+        font-family: inherit;
+        background: "";
+    }
+        .hotlinks-list {
+            display: block;
+            height: 45vh;
+            width: auto;
+        }
+        .hotlinks-text {
+            font-size: 1em;
+            font-weight: 300;
+            color: white;
+            text-decoration: none;
+            
+        }
 
         
