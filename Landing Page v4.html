@@ -8,18 +8,20 @@
         <link rel="stylesheet" href="/CSS v3.css">
     </head>
     <body>
-        <header>
-            <nav class="nav-container">
-                <img class="min-logo" src="./Icons/Logo3.png" alt="navbar">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <header id="header">
+            <nav id="nav-bar" class="nav-container">
+                <img id="header-img" class="min-logo" src="./Icons/Logo3.png" alt="navbar">
                 <img class="min-menu" src="./Icons/min menu.png" alt="menu">
                 <ul class="navbar">
                     <li class="hassubs"><a href="#">Explore</a>
                         <ul class="dropdown">
-                            <li class="sub"><a href="#" alt="News">News</a></li>
-                            <li class="sub"><a href="#" alt="Events">Events</a></li>
-                            <li class="sub"><a href="#" alt="The Future">The Future</a></li>
-                            <li class="sub"><a href="#" alt="Our Ethos">Our Ethos</a></li>
-                            <li class="sub"><a href="#" alt="Our Mission">Our Mission</a></li>
+                            <li class="sub"><a class="nav-link" href="#Home" alt="Home">Home</a></li>
+                            <li class="sub"><a class="nav-link" href="#Design" alt="Design">Design</a></li>
+                            <li class="sub"><a class="nav-link" href="#Technology" alt="Technology">Technology</a></li>
+                            <li class="sub"><a class="nav-link" href="#Echolocation" alt="Echolocation">Echolocation</a></li>
+                            <li class="sub"><a class="nav-link" href="#Audio" alt="Audio">Audio</a></li>
+                            <li class="sub"><a class="nav-link" href="#Specs" alt="Specs">Specs</a></li>
                         </ul>
                     </li>
                     <li class="hassubs"><a href="#" alt="Smartphones">Smartphones</a>
@@ -99,486 +101,502 @@
             </nav>
         </header>
         <main>
-            <div class="front-back-image-container">
-                <div class="front-back-image">
-                    <img class="front-back-image image-order" src="Photos/front back.png" alt="TouchMi 4 MAX EDGE">
-                </div>
-                <div class="landing-elements">
-                    <div class="landing-text">
-                        <p class="landing-text-1">TouchMi 4 MAX EDGE</p>
-                        <p class="landing-text-2"> The Future. Right Here. Right Now.</p>
+            <section id="Home">
+                <div class="front-back-image-container">
+                    <div class="front-back-image">
+                        <img class="front-back-image image-order" src="Photos/front back.png" alt="TouchMi 4 MAX EDGE">
                     </div>
-                    <div>
-                        <p class="landing-blurb">The world's first 16x rear-facing camera array, the world's first 6x front-facing facing camera array, the world's first
-                            10-Digit fingerprint security system and the world's first ultrasonic echolocation system. E-Mesis Industries<sup style="font-size:10px;">&copy;</sup>
-                            once again obliterates the limitations of what is possible to bring you new technology, light-years ahead of the competition. 
-                        </p>
-                    </div>
-                    <div class="specs">
-                        <ul>
-                            <li>16x 36MP rear-facing camera array</li>
-                            <li>6x 12MP front-facing camera array</li>
-                            <li>Up to 32x digital and 16x optical zoom</li>
-                            <li>10-Digit <u>SecureTech</u> &trade; Fingerprint Sensor security system</li>
-                            <li>6.6" VUHD <u>Vaporware</u><sup style="font-size:10px;">&trade;</sup> EMOLED Display</li>
-                            <li><u>SO-NR</u><sup style="font-size:10px;">&trade;</sup> Echo-location Technology</li>
-                        </ul>
-                    </div>
-                    <div class="color-container">
-                        <form class="color-form">
-                                <input class="color-button" type="radio" name="color" value="white" checked><label for="white">White</label>
-                                <input class="color-button" type="radio" name="color" value="pure white"><label for="pure white">Pure White</label>
-                                <input class="color-button" type="radio" name="color" value="off white"><label for="off white">Off White</label>
-                                <input class="color-button" type="radio" name="color" value="pearl white"><label for="pearl white">Pearl White</label>
-                        </form>
-                    </div>
-                    <div class=pre-order-form>
-                        <div class="price">
-                            <p class="price">Starting from: $2899</p>
-                        </div>
-                        <div class="pre-order-button">
-                            <button class="pre-order-button" type="button">Pre-Order</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="page-spacers">
-            </div>
-            <div class="right-image-container">
-                <div class="right-image-text-container">
-                    <div class="right-image-title">
-                        <h2 class="right-image-title">Beyond Thin and Light</h2>
-                    </div>
-                    <div class="right-image-blurb">
-                        <p class="right-image-light-blurb">With a revolutionary new design this light, you'll need a paperweight to hold it down.
-                            It's so thin you'll need our all new <a href="#" alt="TouchMi Case 4">TouchMi Case 4</a> to
-                            maintain structural integrity*. Here at E-mesis Industries, thin and light is a thing of the past.
-                            Welcome, to the future of delicate & flimsy.
-                        </p>
-                    </div>
-                    <div class="right-image-specs-container">
-                        <div class="right-image-specs-sub-container">
-                            <p class="spec-type">Display</p>
-                            <p class="spec-figure">6.6"</p>
-                            <p class="spec-unit">VUHD QLED</p>
-                        </div>
-                        <div class="right-image-specs-sub-container">
-                            <p class="spec-type">Depth</p>
-                            <p class="spec-figure">5.6</p>
-                            <p class="spec-unit">MM</p>
-                        </div>
-                        <div class="right-image-specs-sub-container">
-                            <p class="spec-type">Weight</p>
-                            <p class="spec-figure">150</p>
-                            <p class="spec-unit">Grams</p>
-                        </div>
-                    </div>
-                    <div class="right-image-screen-blurb">
-                        Featuring <a href="#" alt="Vaporware">Vaporware's</a> latest 6.6" Ultra EMOLED screen, you'll experience higher levels of
-                        resolution, vibrancy and colour than ever before.
-                    </div>
-                    <div class="right-image-screen-specs-container">
-                        <div>
-                            <p class="spec-type">Resolution</p>
-                            <p class="spec-figure">7680 x 4320</p>
-                            <p class="spec-unit">Pixels</p>
+                    <video id="video" class="video-embed" width="305px" height="655px" autoplay loop>
+                        <source src="./product-video/Minido.webm" type="video/webm">
+                        <source src="./product-video/Minido.mp4" type="video/mp4">
+                    </video>
+                    <div class="landing-elements">
+                        <div class="landing-text">
+                            <p class="landing-text-1">TouchMi 4 MAX EDGE</p>
+                            <p class="landing-text-2"> The Future. Right Here. Right Now.</p>
                         </div>
                         <div>
-                            <p class="spec-type">Pixel Density</p>
-                            <p class="spec-figure">1335</p>
-                            <p class="spec-unit">PPI</p>
+                            <p class="landing-blurb">The world's first 16x rear-facing camera array, the world's first 6x front-facing facing camera array, the world's first
+                                10-Digit fingerprint security system and the world's first ultrasonic echolocation system. E-Mesis Industries<sup style="font-size:10px;">&copy;</sup>
+                                once again obliterates the limitations of what is possible to bring you new technology, light-years ahead of the competition. 
+                            </p>
                         </div>
+                        <div class="specs">
+                            <ul>
+                                <li>16x 36MP rear-facing camera array</li>
+                                <li>6x 12MP front-facing camera array</li>
+                                <li>Up to 32x digital and 16x optical zoom</li>
+                                <li>10-Digit <u>SecureTech</u> &trade; Fingerprint Sensor security system</li>
+                                <li>6.6" VUHD <u>Vaporware</u><sup style="font-size:10px;">&trade;</sup> EMOLED Display</li>
+                                <li><u>SO-NR</u><sup style="font-size:10px;">&trade;</sup> Echo-location Technology</li>
+                            </ul>
+                        </div>
+                        <div class="color-container">
+                            <form class="color-form">
+                                    <input class="color-button" type="radio" name="color" value="white" checked><label for="white">White</label>
+                                    <input class="color-button" type="radio" name="color" value="pure white"><label for="pure white">Pure White</label>
+                                    <input class="color-button" type="radio" name="color" value="off white"><label for="off white">Off White</label>
+                                    <input class="color-button" type="radio" name="color" value="pearl white"><label for="pearl white">Pearl White</label>
+                            </form>
+                        </div>
+                        <div class=pre-order-form>
+                            <div class="price">
+                                <p class="price">Starting from: $2899</p>
+                            </div>
+                            <div class="pre-order-button">
+                                <button class="pre-order-button" type="button">Pre-Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Design">
+            <div class="page-spacers">
+            </div>
+                <div class="right-image-container">
+                    <div class="right-image-text-container">
+                        <div class="right-image-title">
+                            <h2 class="right-image-title">Beyond Thin and Light</h2>
+                        </div>
+                        <div class="right-image-blurb">
+                            <p class="right-image-light-blurb">With a revolutionary new design this light, you'll need a paperweight to hold it down.
+                                It's so thin you'll need our all new <a href="#" alt="TouchMi Case 4">TouchMi Case 4</a> to
+                                maintain structural integrity*. Here at E-mesis Industries, thin and light is a thing of the past.
+                                Welcome, to the future of delicate & flimsy.
+                            </p>
+                        </div>
+                        <div class="right-image-specs-container">
+                            <div class="right-image-specs-sub-container">
+                                <p class="spec-type">Display</p>
+                                <p class="spec-figure">6.6"</p>
+                                <p class="spec-unit">VUHD QLED</p>
+                            </div>
+                            <div class="right-image-specs-sub-container">
+                                <p class="spec-type">Depth</p>
+                                <p class="spec-figure">5.6</p>
+                                <p class="spec-unit">MM</p>
+                            </div>
+                            <div class="right-image-specs-sub-container">
+                                <p class="spec-type">Weight</p>
+                                <p class="spec-figure">150</p>
+                                <p class="spec-unit">Grams</p>
+                            </div>
+                        </div>
+                        <div class="right-image-screen-blurb">
+                            Featuring <a href="#" alt="Vaporware">Vaporware's</a> latest 6.6" Ultra EMOLED screen, you'll experience higher levels of
+                            resolution, vibrancy and colour than ever before.
+                        </div>
+                        <div class="right-image-screen-specs-container">
+                            <div>
+                                <p class="spec-type">Resolution</p>
+                                <p class="spec-figure">7680 x 4320</p>
+                                <p class="spec-unit">Pixels</p>
+                            </div>
+                            <div>
+                                <p class="spec-type">Pixel Density</p>
+                                <p class="spec-figure">1335</p>
+                                <p class="spec-unit">PPI</p>
+                            </div>
+                            <div>
+                                <p class="spec-type">Aspect Ratio</p>
+                                <p class="spec-figure">16:9</p>
+                                <p class="spec-unit">Standard</p>
+                            </div>
+                        </div>
+                        <div class="right-image-asterisk">
+                            <p class="right-image-asterisk">*Sold Seperately - $99</p>
+                        </div>
+                    </div>
+                    <div class="right-image">
+                        <img class="right-image" src="Photos/right side and screen.png" alt="TouchMi 4 MAX EDGE Side" usemap="#right-image-map">
+                        <map name="right-image-map">
+                            <area target="#" alt="Customisable Macro Buttons" title="Customisable Macro Buttons" href="#" coords="917,306,NaN" shape="circle">
+                            <area target="#" alt="6x Front-Facing Cameras" title="6x Front-Facing Cameras" href="#" coords="1002,114,NaN" shape="circle">
+                            <area target="#" alt="16:9 8K Ultra EMOLED Vaporware Display" title="16:9 8K Ultra EMOLED Vaporware Display" href="#" coords="559,499,NaN" shape="circle">
+                            <area target="#" alt="5.6mm Depth" title="5.6mm Depth" href="#" coords="304,915,NaN" shape="circle">
+                        </map>
+                    </div>
+                </div>
+            </section>
+            <section id="Technology">
+            <div class="page-spacers">
+            </div>
+                <div class="back-image-container">
+                    <div class="back-image-sub-container">
+                        <img class="back-image" src="Photos/back.png" alt="TouchMi 4 MAX EDGE Rear">
+                    </div>
+                    <div class="back-image-text-container">
+                        <div class="back-image-title">
+                            <h2 class="back-image-title">Power To The Pixel</h2>
+                        </div>
+                        <div class="back-image-blurb">
+                            <p class="back-image-blurb">Our new 16x <a href="#" alt="SexDec">SexDec</a><sup>&trade;</sup> camera array packs a 36MP photo quality capability per sensor and 18
+                                aperture lengths. Who needs a microscope when you have images and videos sharper than your eyes could possibly even see? Remember - 
+                            your photos are now 16 times larger, which means 16 times better! </p>
+                        </div>
+                        <div class="back-image-specs-container">
+                            <div class="back-image-specs-sub-container">
+                                <p class="spec-type">Main Camera (16x)</p>
+                                <p class="spec-figure">36</p>
+                                <p class="spec-unit">Megapixels</p>
+                            </div>
+                            <div class="back-image-specs-sub-container">
+                                <p class="spec-type">Main Camera Apertures (x18)</p>
+                                <p class="spec-figure">F/1.2 - F/18</p>
+                                <p class="spec-unit">F-Stops</p>
+                            </div>
+                            <div class="back-image-specs-sub-container">
+                                <p class="spec-type">Video Resolution</p>
+                                <p class="spec-figure">1080p, 2K, 4K, 8K</p>
+                                <p class="spec-unit">Megapixels</p>
+                            </div>
+                            <div class="back-image-specs-sub-container">
+                                <p class="spec-type">Zoom</p>
+                                <p class="spec-figure">32x, 16x</p>
+                                <p class="spec-unit">Digital, Optical</p>
+                            </div>
+                        </div>
+                        <div class="back-image-security-title">
+                            <h2 class="back-image-security-title">Unbreakable, Uncrackable, Invunerable</h2>
+                        </div>
+                        <div class="back-image-security-blurb">
+                            <p class="back-image-security-blurb">Keep greasy, unwelcome eyes and fingers at bay with the new E2 security chip and new <b>SecureTech<sup>&trade;</sup></b> 10-Digit fingerprint array. Trying to hack
+                            your phone isn't so easy when you're playing 10-Digit finger twister. </p>
+                        </div>
+                        <div class="back-image-security-icons-container">
+                            <div class="back-image-security-icons-sub-container">
+                                <img class="securetech-logo" src="./Icons/SecureTech Logo.png" alt="SecureTech Logo">
+                                <p class="security-icons-text">Military grade AES-256 encription for all those selfies, dog photos, and apps you've forgotten to delete.</p>
+                            </div>
+                            <div class="back-image-security-icons-sub-container">
+                                <img class="fingerprint-logo" src="./Icons/Fingerprint Logo.png" alt="10-Digit Security">
+                                <p class="security-icons-text">10-Digit security ensures your TouchMi is never simple to unlock.</p>
+                            </div>
+                            <div class="back-image-security-icons-sub-container">
+                                <img class="online-logo" src="./Icons/Online Logo.png" alt="Always Online">
+                                <p class="security-icons-text"><b>Always Online<sup>&trade;</sup></b> ensures all your information is constantly uploaded to our cloud and lost in unaccountable data leaks.</p>
+                            </div>
+                        </div>
+                        <div class="security-asterisk">
+                            <p class="security-asterisk">*<b>SecureTech<sup>&trade;</sup></b> offers software customisation for those without fingers</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Echolocation">
+            <div class="page-spacers">
+            </div>
+                <div class="top-image-container">
+                    <div class="top-image-title">
+                        <h2 class="top-image-title">The Future of Localisation, Is Echolocation</h2>
+                    </div>
+                    <div class="top-image-text-main-container">
+                        <div class="top-image-text-left-container">
+                            <div class="top-image-subtitle">
+                                <h2 class="top-image-subtitle">Echolocation: The New GPS</h2>
+                            </div>
+                            <div class="top-image-text-left-blurb">
+                                <p class="top-image-text-left-blurb">Using groundbreaking, cutting edge <b style="font-size: 0.9em;">SO-NR<sup>&trade;</sup></b> enabled technology, your TouchMi can now truly see, using high frequency sonic pulses
+                                 to create pin-point accurate 3D images of your surroundings.</p> 
+                                 <p class="top-image-text-left-blurb">Your smartphone is no longer blind, but can see; much like how a bat can. Bats can't actually see, but can you track dozens of miniscule flying insects
+                                in the dark? I didn't think so. </p>
+                            </div>
+                            <div class=sonr-icons-main-container>
+                                <div class="sonr-icons-sub-container">
+                                    <img class="microphone-logo" src="./Icons/microphone logo.png" alt="microphone logo">
+                                    <p class="sonr-icons-text">31 microphones ensure you're always within ear shot and being recorded.</p>
+                                </div>
+                                <div class="sonr-icons-sub-container">
+                                    <img class="threedee-map-logo" src="./Icons/3D Map logo.png" alt="SO-NR mapping">
+                                    <p class="sonr-icons-text"><b>SO-NR<sup>&trade;</sup></b> software maps it's surroundings, so your phone knows exactly where you are.</p>
+                                </div>
+                                <div class="sonr-icons-sub-container">
+                                    <img class="bat-logo" src="./Icons/bat.png" alt="bat logo">
+                                    <p class="sonr-icons-text">Inspired by, tested and developed with bats.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-image-text-right-container">
+                            <div class="top-image-subtitle">
+                                <h2 class="top-image-subtitle">The Future Of <b>SO-NR <sup style="font-size: 0.5em;line-height:0;">&trade;</sup></b> Echolocation Software</h2>
+                            </div>
+                            <div class="top-image-text-left-blurb">
+                                <p class="top-image-text-left-blurb">Echolocation technology faces a bright future in both it's current and potetial application. With <b>SO-NR<sup style="font-size:0.5em;line-height: 0;">&trade;</sup></b>
+                                open source software, the developer community to free to play a key role in shaping the potential of this innovative technology.</p>
+                                <p class="top-image-text-left-blurb">With such a potentially powerful and flexible tool, the possibilities are endless. What weird and most likely useless software will you create?</p>
+                            </div>
+                            <div class="future-sonr-icons-container-main">
+                                <div class="future-sonr-icons-sub-container">
+                                    <img class="future-sonr-icons" src="./Icons/maps icon.png" alt="Localisation with Maps">
+                                    <p class="future-sonr-icons-text">Your uploaded 3D map data enables anyone to navigate everywhere indoors - even in your home!</p>
+                                </div>
+                                <div class="future-sonr-icons-sub-container">
+                                    <img class="future-sonr-icons" src="./Icons/VR Icon.png" alt="Virtual Reality and SO-NR">
+                                    <p class="future-sonr-icons-text">No more clunky VR boundary systems - echolocation accurately tracks your relative position.</p>
+                                </div>
+                                <div class="future-sonr-icons-sub-container">
+                                    <img class="future-sonr-icons" src="./Icons/ASA logo.png" alt="Automatic Sensory Synth">
+                                    <p class="future-sonr-icons-text">Automatic Sensory Synthesis (<b>A.S.S<sup style="font-size:0.5em;">&trade;</sup></b>) enables superior orientation than accelerometer counterparts. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-image">
+                        <img class="top-image" src="Photos/top.png" alt="TouchMi 4 MAX EDGE top">
+                    </div>
+                    <div class="sonr-asterisk">
+                        <div class="sonr-asterisk-1">
+                            <p>*All of your <b>SO-NR<sup>&trade;</sup></b> information is safe and sound with our service providers** </p>
+                        </div>
+                        <div class="sonr-asterisk-2">
+                            <p>**Facebook, Equifax, Emerdata (Formally Cambridge Analytica), Alphabet, Amazon</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Audio">
+            <div class="page-spacers">
+            </div>
+                <div class="bottom-image-container">
+                    <div class="bottom-image-title">
+                        <h2 class="bottom-image-title">You Spoke, We Listened</h2>
+                    </div>
+                    <div class="bottom-image-text-main-container">
                         <div>
-                            <p class="spec-type">Aspect Ratio</p>
-                            <p class="spec-figure">16:9</p>
-                            <p class="spec-unit">Standard</p>
+                            <div class="bottom-image-text-left-container">
+                                <div class="bottom-image-subtitle">
+                                    <h3 class="bottom-image-subtitle">Strength In Numbers</h3>
+                                </div>
+                                <div class="bottom-image-text-blurb-left">
+                                    <p class="bottom-image-text-blurb-left"> Too much music, not enough ways to listen to it?</p> 
+                                    <p>Bluetooth headphones are expensive, face connectivity issues
+                                        and don't carry the same audio quality of their wired counterparts - so why get rid of them? Too many smartphones these days have ditched
+                                        the 3.5mm headphone jack for a minimalist design but here, at <b>E-Mesis Industries <sup style="font-size:0.5em;line-height:0;">&copy;</sup></b>
+                                        we favor quantity, over quality.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bottom-image-right-container">
+                                <div class="bottom-image-subtitle">
+                                    <h3 class="bottom-image-subtitle">Jack's Back</h3>
+                                </div>
+                                <div class="bottom-image-text-blurb-right">
+                                    <p class="bottom-image-text-blurb-right">Who wants just one headphone jack? The tech conglomerates have taken so much, so lets take back our jacks!</p>
+                                        <p class="bottom-image-text-blurb-right">Your new TouchMi 4 Max EDGE has not one, not two, but three 3.5mm headphone jacks! You'll never run short of way to listen to your music again.
+                                            Listen with a friend or three or connect your phone to 3 external speakers to make a weird, asymmetrical surround sound - the possibilities are limited!
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="right-image-asterisk">
-                        <p class="right-image-asterisk">*Sold Seperately - $99</p>
+                    <div class="bottom-image">
+                        <img class="bottom-image" src="Photos/bottom.png" alt="TouchMi 4 MAX EDGE bottom">
                     </div>
                 </div>
-                <div class="right-image">
-                    <img class="right-image" src="Photos/right side and screen.png" alt="TouchMi 4 MAX EDGE Side" usemap="#right-image-map">
-                    <map name="right-image-map">
-                        <area target="#" alt="Customisable Macro Buttons" title="Customisable Macro Buttons" href="#" coords="917,306,NaN" shape="circle">
-                        <area target="#" alt="6x Front-Facing Cameras" title="6x Front-Facing Cameras" href="#" coords="1002,114,NaN" shape="circle">
-                        <area target="#" alt="16:9 8K Ultra EMOLED Vaporware Display" title="16:9 8K Ultra EMOLED Vaporware Display" href="#" coords="559,499,NaN" shape="circle">
-                        <area target="#" alt="5.6mm Depth" title="5.6mm Depth" href="#" coords="304,915,NaN" shape="circle">
-                    </map>
-                </div>
-            </div>
+            </section>
+            <section id="Specs">
             <div class="page-spacers">
             </div>
-            <div class="back-image-container">
-                <div class="back-image-sub-container">
-                    <img class="back-image" src="Photos/back.png" alt="TouchMi 4 MAX EDGE Rear">
+                <div class="left-image-container">
+                    <div class="left-image-specs-left-container">
+                        <div class="specs-subtitle-left">
+                            <h3 class="specs-subtitle-left">Display</h3>
+                        </div>
+                        <div class="left-image-specs-left-row-container">
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Dimensions</p>
+                                <p class="index-specs-figure">6.6</p>
+                                <p class="index-specs-unit">Inches</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Screen Type</p>
+                                <p class="index-specs-figure">Ultra EMOLED</p>
+                                <p class="index-specs-unit"><b>Vaporware<sup>&trade;</sup></b></p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Resolution</p>
+                                <p class="index-specs-figure">7680 X 4320 (VUHD)</p>
+                                <p class="index-specs-unit">Pixels</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Brightness</p>
+                                <p class="index-specs-figure">8,000</p>
+                                <p class="index-specs-unit">Nits</p>
+                            </div>
+                        </div>
+                        <div class="specs-subtitle-left">
+                            <h3 class="specs-subtitle-left">Camera</h3>
+                        </div>
+                        <div class="left-image-specs-left-row-container">
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Main Camera(s)</p>
+                                <p class="index-specs-figure">36</p>
+                                <p class="index-specs-unit">Megapixels</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Main Camera Aperture(s)</p>
+                                <p class="index-specs-figure">F1.2-F18</p>
+                                <p class="index-specs-unit">F-Stops</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Autofocus</p>
+                                <p class="index-specs-figure">Continuous, Single</p>
+                                <p class="index-specs-unit">-</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Pro-Modes</p>
+                                <p class="index-specs-figure">Stacking, Bracketing Panorama, HDR, 3D, Timelapse</p>
+                                <p class="index-specs-unit">-</p>
+                            </div>
+                        </div>
+                        <div class="left-image-specs-left-row-container">
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Front Camera(s)</p>
+                                <p class="index-specs-figure">12</p>
+                                <p class="index-specs-unit">Megapixels</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Front Camera Aperture(s)</p>
+                                <p class="index-specs-figure">F1.2-F5.6</p>
+                                <p class="index-specs-unit">F-Stops</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Flashes</p>
+                                <p class="index-specs-figure">8x</p>
+                                <p class="index-specs-unit">Xenon</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Video Recording</p>
+                                <p class="index-specs-figure">1080p, 2K, 4K, 8K</p>
+                                <p class="index-specs-unit">24fps, 30fps, 60fps, 120fps</p>
+                            </div>
+                        </div>
+                        <div class="specs-subtitle-left">
+                            <h3 class="specs-subtitle-left">Processor</h3>
+                        </div>
+                        <div class="left-image-specs-left-row-container">
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Model</p>
+                                <p class="index-specs-figure">Projectile 80085<b><sup>&trade;</sup></b></p>
+                                <p class="index-specs-unit"><b>E-Mesis Industries <sup>&copy;</sup></b></p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Speed</p>
+                                <p class="index-specs-figure">2.6</p>
+                                <p class="index-specs-unit">GHz</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Cores</p>
+                                <p class="index-specs-figure">8</p>
+                                <p class="index-specs-unit">Cores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-image-photo-container">
+                        <div class="left-image">
+                            <img class="left-image" src="Photos/left.png" alt="TouchMi 4 MAX EDGE left">
+                        </div>
+                    </div>
+                    <div class="left-image-specs-right-container"> 
+                        <div class="specs-subtitle-right">
+                            <h3 class="specs-subtitle-right">Memory</h3>
+                        </div>
+                        <div class="left-image-specs-right-row-container">
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">RAM</p>
+                                <p class="index-specs-figure">8</p>
+                                <p class="index-specs-unit">GB</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">ROM</p>
+                                <p class="index-specs-figure">64</p>
+                                <p class="index-specs-unit">GB</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Internal</p>
+                                <p class="index-specs-figure">320</p>
+                                <p class="index-specs-unit">GB</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">External Support</p>
+                                <p class="index-specs-figure">1TB</p>
+                                <p class="index-specs-unit">MicroSD</p>
+                            </div>
+                        </div>
+                        <div class="specs-subtitle-right">
+                            <h3 class="specs-subtitle-right">Connectivity</h3>
+                        </div>
+                        <div class="left-image-specs-right-row-container">
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Bluetooth</p>
+                                <p class="index-specs-figure">v5.0</p>
+                                <p>-</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">WiFi</p>
+                                <p class="index-specs-figure">802.11 a/b/g/n/ac 2.4G,5GHz</p>
+                                <p>-</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">NFC</p>
+                                <p class="index-specs-figure">Enabled</p>
+                                <p>-</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">USB Port</p>
+                                <p class="index-specs-figure">USB Type-C v2</p>
+                                <p>-</p>
+                            </div>
+                        </div>
+                        <div class="left-image-specs-right-row-container">
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Headphone Jack</p>
+                                <p class="index-specs-figure">3x 3.5mm</p>
+                                <p>-</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">WiFi Direct</p>
+                                <p class="index-specs-figure">Enabled</p>
+                                <p>-</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Location</p>
+                                <p class="index-specs-figure">GPS, Echolocation</p>
+                                <p>-</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Sensors</p>
+                                <p class="index-specs-figure">ACLR, So-NR, Gyro</p>
+                                <p class="index-specs-unit">Geomagnetic, Light</p>
+                            </div>
+                        </div>
+                        <div class="specs-subtitle-right">
+                            <h3 class="specs-subtitle-right">Other</h3>
+                        </div>
+                        <div class="left-image-specs-right-row-container">
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Battery</p>
+                                <p class="index-specs-figure">100***</p>
+                                <p class="index-specs-unit">mAh</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Dimensions</p>
+                                <p class="index-specs-figure">5.8x3.2x0.22</p>
+                                <p class="index-specs-unit">HxWxD</p>
+                            </div>
+                            <div class="left-image-specs-sub-container">
+                                <p class="index-specs-type">Weight</p>
+                                <p class="index-specs-figure">150</p>
+                                <p class="index-specs-unit">Grams</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-asterisk">
+                        <p class="index-asterisk">***What, you thought we were going to be able to jam a 5000mAh battery in a 150g, 5.6mm smartphone with 16 cameras?</p>
+                    </div>
                 </div>
-                <div class="back-image-text-container">
-                    <div class="back-image-title">
-                        <h2 class="back-image-title">Power To The Pixel</h2>
-                    </div>
-                    <div class="back-image-blurb">
-                        <p class="back-image-blurb">Our new 16x <a href="#" alt="SexDec">SexDec</a><sup>&trade;</sup> camera array packs a 36MP photo quality capability per sensor and 18
-                            aperture lengths. Who needs a microscope when you have images and videos sharper than your eyes could possibly even see? Remember - 
-                        your photos are now 16 times larger, which means 16 times better! </p>
-                    </div>
-                    <div class="back-image-specs-container">
-                        <div class="back-image-specs-sub-container">
-                            <p class="spec-type">Main Camera (16x)</p>
-                            <p class="spec-figure">36</p>
-                            <p class="spec-unit">Megapixels</p>
-                        </div>
-                        <div class="back-image-specs-sub-container">
-                            <p class="spec-type">Main Camera Apertures (x18)</p>
-                            <p class="spec-figure">F/1.2 - F/18</p>
-                            <p class="spec-unit">F-Stops</p>
-                        </div>
-                        <div class="back-image-specs-sub-container">
-                            <p class="spec-type">Video Resolution</p>
-                            <p class="spec-figure">1080p, 2K, 4K, 8K</p>
-                            <p class="spec-unit">Megapixels</p>
-                        </div>
-                        <div class="back-image-specs-sub-container">
-                            <p class="spec-type">Zoom</p>
-                            <p class="spec-figure">32x, 16x</p>
-                            <p class="spec-unit">Digital, Optical</p>
-                        </div>
-                    </div>
-                    <div class="back-image-security-title">
-                        <h2 class="back-image-security-title">Unbreakable, Uncrackable, Invunerable</h2>
-                    </div>
-                    <div class="back-image-security-blurb">
-                        <p class="back-image-security-blurb">Keep greasy, unwelcome eyes and fingers at bay with the new E2 security chip and new <b>SecureTech<sup>&trade;</sup></b> 10-Digit fingerprint array. Trying to hack
-                        your phone isn't so easy when you're playing 10-Digit finger twister. </p>
-                    </div>
-                    <div class="back-image-security-icons-container">
-                        <div class="back-image-security-icons-sub-container">
-                            <img class="securetech-logo" src="./Icons/SecureTech Logo.png" alt="SecureTech Logo">
-                            <p class="security-icons-text">Military grade AES-256 encription for all those selfies, dog photos, and apps you've forgotten to delete.</p>
-                        </div>
-                        <div class="back-image-security-icons-sub-container">
-                            <img class="fingerprint-logo" src="./Icons/Fingerprint Logo.png" alt="10-Digit Security">
-                            <p class="security-icons-text">10-Digit security ensures your TouchMi is never simple to unlock.</p>
-                        </div>
-                        <div class="back-image-security-icons-sub-container">
-                            <img class="online-logo" src="./Icons/Online Logo.png" alt="Always Online">
-                            <p class="security-icons-text"><b>Always Online<sup>&trade;</sup></b> ensures all your information is constantly uploaded to our cloud and lost in unaccountable data leaks.</p>
-                        </div>
-                    </div>
-                    <div class="security-asterisk">
-                        <p class="security-asterisk">*<b>SecureTech<sup>&trade;</sup></b> offers software customisation for those without fingers</p>
-                    </div>
-                </div>
-            </div>
+            </section>
             <div class="page-spacers">
-            </div>
-            <div class="top-image-container">
-                <div class="top-image-title">
-                    <h2 class="top-image-title">The Future of Localisation, Is Echolocation</h2>
-                </div>
-                <div class="top-image-text-main-container">
-                    <div class="top-image-text-left-container">
-                        <div class="top-image-subtitle">
-                            <h2 class="top-image-subtitle">Echolocation: The New GPS</h2>
-                        </div>
-                        <div class="top-image-text-left-blurb">
-                            <p class="top-image-text-left-blurb">Using groundbreaking, cutting edge <b style="font-size: 0.9em;">SO-NR<sup>&trade;</sup></b> enabled technology, your TouchMi can now truly see, using high frequency sonic pulses
-                             to create pin-point accurate 3D images of your surroundings.</p> 
-                             <p class="top-image-text-left-blurb">Your smartphone is no longer blind, but can see; much like how a bat can. Bats can't actually see, but can you track dozens of miniscule flying insects
-                            in the dark? I didn't think so. </p>
-                        </div>
-                        <div class=sonr-icons-main-container>
-                            <div class="sonr-icons-sub-container">
-                                <img class="microphone-logo" src="./Icons/microphone logo.png" alt="microphone logo">
-                                <p class="sonr-icons-text">31 microphones ensure you're always within ear shot and being recorded.</p>
-                            </div>
-                            <div class="sonr-icons-sub-container">
-                                <img class="threedee-map-logo" src="./Icons/3D Map logo.png" alt="SO-NR mapping">
-                                <p class="sonr-icons-text"><b>SO-NR<sup>&trade;</sup></b> software maps it's surroundings, so your phone knows exactly where you are.</p>
-                            </div>
-                            <div class="sonr-icons-sub-container">
-                                <img class="bat-logo" src="./Icons/bat.png" alt="bat logo">
-                                <p class="sonr-icons-text">Inspired by, tested and developed with bats.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="top-image-text-right-container">
-                        <div class="top-image-subtitle">
-                            <h2 class="top-image-subtitle">The Future Of <b>SO-NR <sup style="font-size: 0.5em;line-height:0;">&trade;</sup></b> Echolocation Software</h2>
-                        </div>
-                        <div class="top-image-text-left-blurb">
-                            <p class="top-image-text-left-blurb">Echolocation technology faces a bright future in both it's current and potetial application. With <b>SO-NR<sup style="font-size:0.5em;line-height: 0;">&trade;</sup></b>
-                            open source software, the developer community to free to play a key role in shaping the potential of this innovative technology.</p>
-                            <p class="top-image-text-left-blurb">With such a potentially powerful and flexible tool, the possibilities are endless. What weird and most likely useless software will you create?</p>
-                        </div>
-                        <div class="future-sonr-icons-container-main">
-                            <div class="future-sonr-icons-sub-container">
-                                <img class="future-sonr-icons" src="./Icons/maps icon.png" alt="Localisation with Maps">
-                                <p class="future-sonr-icons-text">Your uploaded 3D map data enables anyone to navigate everywhere indoors - even in your home!</p>
-                            </div>
-                            <div class="future-sonr-icons-sub-container">
-                                <img class="future-sonr-icons" src="./Icons/VR Icon.png" alt="Virtual Reality and SO-NR">
-                                <p class="future-sonr-icons-text">No more clunky VR boundary systems - echolocation accurately tracks your relative position.</p>
-                            </div>
-                            <div class="future-sonr-icons-sub-container">
-                                <img class="future-sonr-icons" src="./Icons/ASA logo.png" alt="Automatic Sensory Synth">
-                                <p class="future-sonr-icons-text">Automatic Sensory Synthesis (<b>A.S.S<sup style="font-size:0.5em;">&trade;</sup></b>) enables superior orientation than accelerometer counterparts. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="top-image">
-                    <img class="top-image" src="Photos/top.png" alt="TouchMi 4 MAX EDGE top">
-                </div>
-                <div class="sonr-asterisk">
-                    <div class="sonr-asterisk-1">
-                        <p>*All of your <b>SO-NR<sup>&trade;</sup></b> information is safe and sound with our service providers** </p>
-                    </div>
-                    <div class="sonr-asterisk-2">
-                        <p>**Facebook, Equifax, Emerdata (Formally Cambridge Analytica), Alphabet, Amazon</p>
-                    </div>
-                </div>
-            </div>
-            <div class="page-spacers">
-            </div>
-            <div class="bottom-image-container">
-                <div class="bottom-image-title">
-                    <h2 class="bottom-image-title">You Spoke, We Listened</h2>
-                </div>
-                <div class="bottom-image-text-main-container">
-                    <div>
-                        <div class="bottom-image-text-left-container">
-                            <div class="bottom-image-subtitle">
-                                <h3 class="bottom-image-subtitle">Strength In Numbers</h3>
-                            </div>
-                            <div class="bottom-image-text-blurb-left">
-                                <p class="bottom-image-text-blurb-left"> Too much music, not enough ways to listen to it?</p> 
-                                <p>Bluetooth headphones are expensive, face connectivity issues
-                                    and don't carry the same audio quality of their wired counterparts - so why get rid of them? Too many smartphones these days have ditched
-                                    the 3.5mm headphone jack for a minimalist design but here, at <b>E-Mesis Industries <sup style="font-size:0.5em;line-height:0;">&copy;</sup></b>
-                                    we favor quantity, over quality.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="bottom-image-right-container">
-                            <div class="bottom-image-subtitle">
-                                <h3 class="bottom-image-subtitle">Jack's Back</h3>
-                            </div>
-                            <div class="bottom-image-text-blurb-right">
-                                <p class="bottom-image-text-blurb-right">Who wants just one headphone jack? The tech conglomerates have taken so much, so lets take back our jacks!</p>
-                                    <p class="bottom-image-text-blurb-right">Your new TouchMi 4 Max EDGE has not one, not two, but three 3.5mm headphone jacks! You'll never run short of way to listen to your music again.
-                                        Listen with a friend or three or connect your phone to 3 external speakers to make a weird, asymmetrical surround sound - the possibilities are limited!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-image">
-                    <img class="bottom-image" src="Photos/bottom.png" alt="TouchMi 4 MAX EDGE bottom">
-                </div>
-            </div>
-            <div class="page-spacers">
-            </div>
-            <div class="left-image-container">
-                <div class="left-image-specs-left-container">
-                    <div class="specs-subtitle-left">
-                        <h3 class="specs-subtitle-left">Display</h3>
-                    </div>
-                    <div class="left-image-specs-left-row-container">
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Dimensions</p>
-                            <p class="index-specs-figure">6.6</p>
-                            <p class="index-specs-unit">Inches</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Screen Type</p>
-                            <p class="index-specs-figure">Ultra EMOLED</p>
-                            <p class="index-specs-unit"><b>Vaporware<sup>&trade;</sup></b></p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Resolution</p>
-                            <p class="index-specs-figure">7680 X 4320 (VUHD)</p>
-                            <p class="index-specs-unit">Pixels</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Brightness</p>
-                            <p class="index-specs-figure">8,000</p>
-                            <p class="index-specs-unit">Nits</p>
-                        </div>
-                    </div>
-                    <div class="specs-subtitle-left">
-                        <h3 class="specs-subtitle-left">Camera</h3>
-                    </div>
-                    <div class="left-image-specs-left-row-container">
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Main Camera(s)</p>
-                            <p class="index-specs-figure">36</p>
-                            <p class="index-specs-unit">Megapixels</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Main Camera Aperture(s)</p>
-                            <p class="index-specs-figure">F1.2-F18</p>
-                            <p class="index-specs-unit">F-Stops</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Autofocus</p>
-                            <p class="index-specs-figure">Continuous, Single</p>
-                            <p class="index-specs-unit">-</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Pro-Modes</p>
-                            <p class="index-specs-figure">Stacking, Bracketing Panorama, HDR, 3D, Timelapse</p>
-                            <p class="index-specs-unit">-</p>
-                        </div>
-                    </div>
-                    <div class="left-image-specs-left-row-container">
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Front Camera(s)</p>
-                            <p class="index-specs-figure">12</p>
-                            <p class="index-specs-unit">Megapixels</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Front Camera Aperture(s)</p>
-                            <p class="index-specs-figure">F1.2-F5.6</p>
-                            <p class="index-specs-unit">F-Stops</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Flashes</p>
-                            <p class="index-specs-figure">8x</p>
-                            <p class="index-specs-unit">Xenon</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Video Recording</p>
-                            <p class="index-specs-figure">1080p, 2K, 4K, 8K</p>
-                            <p class="index-specs-unit">24fps, 30fps, 60fps, 120fps</p>
-                        </div>
-                    </div>
-                    <div class="specs-subtitle-left">
-                        <h3 class="specs-subtitle-left">Processor</h3>
-                    </div>
-                    <div class="left-image-specs-left-row-container">
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Model</p>
-                            <p class="index-specs-figure">Projectile 80085<b><sup>&trade;</sup></b></p>
-                            <p class="index-specs-unit"><b>E-Mesis Industries <sup>&copy;</sup></b></p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Speed</p>
-                            <p class="index-specs-figure">2.6</p>
-                            <p class="index-specs-unit">GHz</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Cores</p>
-                            <p class="index-specs-figure">8</p>
-                            <p class="index-specs-unit">Cores</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="left-image-photo-container">
-                    <div class="left-image">
-                        <img class="left-image" src="Photos/left.png" alt="TouchMi 4 MAX EDGE left">
-                    </div>
-                </div>
-                <div class="left-image-specs-right-container"> 
-                    <div class="specs-subtitle-right">
-                        <h3 class="specs-subtitle-right">Memory</h3>
-                    </div>
-                    <div class="left-image-specs-right-row-container">
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">RAM</p>
-                            <p class="index-specs-figure">8</p>
-                            <p class="index-specs-unit">GB</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">ROM</p>
-                            <p class="index-specs-figure">64</p>
-                            <p class="index-specs-unit">GB</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Internal</p>
-                            <p class="index-specs-figure">320</p>
-                            <p class="index-specs-unit">GB</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">External Support</p>
-                            <p class="index-specs-figure">1TB</p>
-                            <p class="index-specs-unit">MicroSD</p>
-                        </div>
-                    </div>
-                    <div class="specs-subtitle-right">
-                        <h3 class="specs-subtitle-right">Connectivity</h3>
-                    </div>
-                    <div class="left-image-specs-right-row-container">
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Bluetooth</p>
-                            <p class="index-specs-figure">v5.0</p>
-                            <p>-</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">WiFi</p>
-                            <p class="index-specs-figure">802.11 a/b/g/n/ac 2.4G,5GHz</p>
-                            <p>-</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">NFC</p>
-                            <p class="index-specs-figure">Enabled</p>
-                            <p>-</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">USB Port</p>
-                            <p class="index-specs-figure">USB Type-C v2</p>
-                            <p>-</p>
-                        </div>
-                    </div>
-                    <div class="left-image-specs-right-row-container">
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Headphone Jack</p>
-                            <p class="index-specs-figure">3x 3.5mm</p>
-                            <p>-</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">WiFi Direct</p>
-                            <p class="index-specs-figure">Enabled</p>
-                            <p>-</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Location</p>
-                            <p class="index-specs-figure">GPS, Echolocation</p>
-                            <p>-</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Sensors</p>
-                            <p class="index-specs-figure">ACLR, So-NR, Gyro</p>
-                            <p class="index-specs-unit">Geomagnetic, Light</p>
-                        </div>
-                    </div>
-                    <div class="specs-subtitle-right">
-                        <h3 class="specs-subtitle-right">Other</h3>
-                    </div>
-                    <div class="left-image-specs-right-row-container">
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Battery</p>
-                            <p class="index-specs-figure">100***</p>
-                            <p class="index-specs-unit">mAh</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Dimensions</p>
-                            <p class="index-specs-figure">5.8x3.2x0.22</p>
-                            <p class="index-specs-unit">HxWxD</p>
-                        </div>
-                        <div class="left-image-specs-sub-container">
-                            <p class="index-specs-type">Weight</p>
-                            <p class="index-specs-figure">150</p>
-                            <p class="index-specs-unit">Grams</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="index-asterisk">
-                    <p class="index-asterisk">***What, you thought we were going to be able to jam a 5000mAh battery in a 150g, 5.6mm smartphone with 16 cameras?</p>
-                </div>
-            </div>
-            <div>
             </div>
             <footer>
                 <div class="footer-company-container">
@@ -596,7 +614,7 @@
                         <b>WeWatch<sup>&trade;</sup></b>, <b>E-Mesis Biotech<sup>&copy;</sup></b> and <b>E-Mesis Pencil Crayons<sup>&trade;</sup></b>.</p>
                     </div>
                 </div>
-                <form class="footer-signup-container">
+                <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form" class="footer-signup-container">
                         <div class="signup-text-container">
                             <div class="signup-header">
                                 <h3>Sign Up</h3>
@@ -628,7 +646,7 @@
                                         <label for="email">Email:</label>
                                     </div>
                                     <div class="form-input">
-                                        <input class="input-fields" type="email" placeholder="Email Address" name="email" autofocus required>
+                                        <input id="email" class="input-fields" type="email" placeholder="Email Address" name="email" autofocus required>
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -643,7 +661,7 @@
                                     <p class="signup-text">By signing up, you agree to our <a href="#" alt="T&Cs" style="color: pink;">Terms & Conditions</a>and<a href="#" alt="Privacy Policy" style="color: pink;">Privacy Policy</a>   <b style="font-size: 1rem; font-family: 'Creepster'; font-weight: 300;"">Now In Virtual Blood!</b></p>
                                 </div>
                                 <div>
-                                    <button class="signup-button" type="submit">Sign Up</button>
+                                    <input id="submit" class="signup-button" type="submit" name="submit">
                                 </div>
                             </div>
                             <div class="social-signup-container">

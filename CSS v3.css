@@ -57,18 +57,19 @@ body {
     .nav-container {
         position: fixed;
         margin-top: -25px;
-        width: 100%;
+        width: 100vw;
         height: 45px;
         border-bottom: 0.5px solid #D6D6D6;
         background-image: linear-gradient( 1.9deg,  rgba(252,250,250,1) 5.7%, rgba(221,219,219,1) 87.7% );
         z-index: 5555;
+        animation-delay: 0.3s;
     } 
     .navbar {
         display: flex;
         position: fixed;
         margin-top: -25px;
         visibility: hidden;
-        width: 100%;
+        width: 100vw;
         height: 80px;
         white-space: wrap;
         word-break: break-word;
@@ -314,6 +315,11 @@ body {
     padding: 0;
     z-index: 1;
 }
+.video-embed {
+    /* height: 655px */
+    /* width: 305px */
+    
+}
 
 /* Landing Text & Elements */
 .landing-elements {
@@ -505,10 +511,11 @@ body {
     display: flex;
     height: 95vh;
     width: 100vw;
-    margin: 25px 20px;
+    margin: 25px 0px;
     justify-content: space-around;
     align-content: flex-start;
     /* align-items: center; */
+    overflow: hidden;
     scroll-snap-align: start;
     background-color: white;
     z-index: 1;
@@ -988,6 +995,7 @@ body {
     width: 100vw;
     margin: 25px 0px;
     scroll-snap-align: start;
+    overflow: hidden;
     background-color: white;
 }
 .bottom-image-text-main-container {
@@ -1004,7 +1012,7 @@ body {
 .bottom-image-title {
     display: block;
     position: relative;
-    width: 100vw;
+    width: 100%;
     font-size: 1.7em;
     font-family: inherit;
     font-weight: 700;
