@@ -19,10 +19,24 @@ html {
     margin: 0;
     background-color: white;
 }
+@media screen and (max-width: 850px) {
+    html {
+        font-size: 12px;
+        max-height: 100vh;
+        max-width: 100vw;
+    }
+}
 body {
     padding: 0;
     margin: 0; 
+    width: 100vw;
+    height: auto;
+    /* overflow-X: hidden; */
 }
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
 /* Navbar Logos */
 .logo {
     position: relative;
@@ -33,7 +47,7 @@ body {
     margin: 0 auto;
     border-radius: 10px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .logo {
         height: 40px;
         width: auto;
@@ -73,7 +87,12 @@ body {
         -moz-box-shadow: 0px 1px 8px -2px rgba(0,0,0,0.75);
         box-shadow: 0px 1px 8px -2px rgba(0,0,0,0.75);
         -webkit-box-shadow: 0px 1px 8px -2px rgba(0,0,0,0.75);
-    } 
+    }
+    @media screen and (max-width: 850px) {
+        .nav-container {
+            display: none;
+        }
+    }
     .navbar {
         display: flex;
         position: fixed;
@@ -90,10 +109,13 @@ body {
         padding: 0;
         z-index: 5555;
         text-align: center;
-        -moz-box-shadow: 0px 1px 8px -2px rgba(0,0,0,0.75);
-        box-shadow: 0px 1px 8px -2px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 1px 8px -2px rgba(0,0,0,0.75);
     }
+    @media screen and (max-width: 850px) {
+        .navbar {
+            display: none;
+        }
+    }
+
     
     /* Navbar & Container Hover Behaviour */
     .nav-container:hover .navbar {
@@ -262,6 +284,113 @@ body {
 	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
+/* Mobile Navbar */
+.mobile-nav {
+    display: none;
+}
+.active {
+    display: none;
+}
+.mobile-nav-links {
+    display: none;
+}
+@media screen and (max-width: 850px) {
+    .mobile-nav {
+        display: block;
+        overflow: hidden;
+        background-image: linear-gradient( 1.9deg,  rgba(252,250,250,1) 5.7%, rgba(221,219,219,1) 87.7% );
+        position: relative;
+        -moz-box-shadow: 0px 1px 8px -2px rgba(0,0,0,0.75);
+        box-shadow: 0px 1px 8px -2px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 1px 8px -2px rgba(0,0,0,0.75);
+    }
+    .mobile-logo {
+        float: left;
+        position: relative;
+        height: 5vh;
+        width: auto;
+        left: 2px;
+        border-radius: 5px;
+        
+    }
+    .mobile-icon {
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 3vh;
+        width: auto;
+        pointer-events: none;
+    }
+    .mobile-nav #mobile-nav-links {
+        display: none;
+    }
+    #mobile-nav-links {
+        padding-top: 15px;
+    }
+    #mobile-nav-links a {
+        display: block;
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        font-size: 1.5em;
+        font-family: inherit, sans-serif;
+        font-weight: 300;
+        line-height: 1;
+        text-decoration: none;
+        color: transparent;
+        background: #666666;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px rgba(235,235,235,0.5);
+        padding: 10px 12px;
+    }
+    .mobile-nav a.icon {
+        background-color: #725183;
+        display: block;
+        position: absolute;
+        height: 5vh;
+        width: 8vw;
+        top: 0px;
+        right: 0px;
+        -moz-box-shadow: inset 1px 1px 13px -1px rgba(57,41,66,1);
+        box-shadow: inset 1px 1px 13px -1px rgba(57,41,66,1);
+        -webkit-box-shadow: inset 1px 1px 13px -1px rgba(57,41,66,1);
+    }
+    .mobile-nav a:hover {
+        color: #f77754;
+        font-weight: 600;
+    }
+    .active {
+        display: inline-block;
+        position: relative;
+        right: 10px;
+        font-family: inherit;
+        font-size: 2.2em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        padding-top: 6px;
+        margin: 0;
+        color: transparent;
+        background: #725183;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px rgba(235,235,235,0.5);
+    }
+    .mobile-links-1 {
+        font-weight: 500 !important;
+        background-color: #725183 !important;
+    }
+    .mobile-links-2 {
+        font-size: 1.2em !important;
+    }
+    
+}
+
 /* Image Containers & Text Divs */
 .image-order {
     z-index: 1;
@@ -298,6 +427,9 @@ body {
     display: block;
     height: 5vh;
     width: 100vw;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
     background: #725183;
     background: -moz-linear-gradient(top, #725183 0%, #725183 51%, #583f65 95%, #563d62 99%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #725183), color-stop(51%, #725183), color-stop(95%, #583f65), color-stop(99%, #563d62));
@@ -321,12 +453,12 @@ body {
     height: 95vh;
     width: 100vw;
     margin: 25px 0px;
-    background-image: linear-gradient( 90.8deg,  rgba(255,255,255,1) 2.6%, rgba(223,223,223,0.80) 98.6% );
+    background-color: white;
     overflow: hidden;
     scroll-snap-align: start;
     z-index: 1;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
  .front-back-image-container {
      width: 100vw;
 }   
@@ -344,29 +476,10 @@ body {
     padding: 0;
     z-index: 1;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
  .front-back-image {
      height: 60vh;
      width: auto;
- }   
-}
-.video-embed {
-    position: absolute;
-    left: 388px;
-    top: 105px;
-    height: 655px;
-    width: 306px;
-    object-fit: fill;
-    border-radius: 20px;
-    border: 0.5px solid #202020;
-    z-index: 10;
-    -moz-box-shadow: inset 1px 1px 6px -1px rgba(0,0,0,0.75);
-    box-shadow: inset 1px 1px 6px -1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: inset 1px 1px 6px -1px rgba(0,0,0,0.75);
-}
-@media screen and (max-width: 800px) {
- .video-embed {
-     display: none;
  }   
 }
 
@@ -380,7 +493,7 @@ body {
     margin: 5px;
     padding: 5px;
     z-index: 2;
-    background-image: linear-gradient( 90.8deg,  rgba(255,255,255,1) 2.6%, rgba(223,223,223,0.80) 98.6% );}
+}
     .landing-text {
         position: relative;
         top: 20px;
@@ -394,7 +507,7 @@ body {
         line-height: 0px;
         letter-spacing: 4px;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
     .landing-text {
         font-size: 10px;
     }
@@ -429,7 +542,7 @@ body {
         font-weight: 300;
         padding: 20px 20px;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
     .landing-blurb {
         display: none;
     }
@@ -448,7 +561,7 @@ body {
         padding: 0px 10px;
         margin: 0
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
     .specs {
         font-size: 12px;
     }
@@ -466,7 +579,7 @@ body {
     height: auto;
     margin-top: -40px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
  .color-container {
      width: 10vw;
  }   
@@ -482,7 +595,7 @@ body {
     text-align: center;
     padding: 5px 0px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     .color-form {
         width: 10vw;    
 
@@ -506,7 +619,7 @@ body {
     margin-right: 0px;
     outline: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .color-button {
         display: block;
         height: 10px;
@@ -735,6 +848,7 @@ body {
     scroll-snap-align: start;
     background-color: white;
     z-index: 1;
+    overflow: hidden;
 }
 .back-image {
     float: left;
@@ -910,6 +1024,7 @@ body {
     scroll-snap-align: start;
     background-color: white;
     z-index: 1;
+    overflow: hidden;
 }
 .top-image {
     height: auto;
@@ -1103,6 +1218,13 @@ body {
     text-align: center;
     padding: 14px 16px 0px 16px;
     margin: 0;
+}
+.video-embed {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 .bottom-image-text-left-container {
     display: inline-flex;
@@ -1342,6 +1464,7 @@ footer {
     -moz-box-shadow: inset 0px 10px 18px -3px rgba(43,30,49,1);
     box-shadow: inset 0px 10px 18px -3px rgba(43,30,49,1);
     -webkit-box-shadow: inset 0px 10px 18px -3px rgba(43,30,49,1);
+    overflow: hidden;
 }
     /* Footer Company Info */
     .footer-company-container {
@@ -1601,6 +1724,7 @@ footer {
     width: 100vw;
     height: auto;
     font-family: inherit;
+    word-break: normal;
     margin: 0;
     padding: 0;
 }

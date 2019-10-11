@@ -6,6 +6,17 @@
         <title>TouchMi 4 MAX EDGE</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/CSS v3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+        function myFunction() {
+            var x = document.getElementById("mobile-nav-links");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+        </script>
     </head>
     <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
@@ -100,16 +111,29 @@
                 </ul>
             </nav>
         </header>
+        <div class="mobile-nav">
+            <h2 class="active" href="#Home" alt="Home">E-Mesis Industries<sup style="font-size: 8px;"><sup>&copy;</sup></sup></h2>
+            <img class="mobile-logo" src="./Icons/mobile-comp-icon.png">
+            <div id="mobile-nav-links">
+                <a class="mobile-links-1" href="#Home" alt="Home">TouchMi 4 MAX EDGE</a>
+                <a class="mobile-links-2" href="#Design" alt="Design">Design</a>
+                <a class="mobile-links-2" href="#Technology" alt="Technology">Technology</a>
+                <a class="mobile-links-2" href="#Echolocation" alt="Echolocation">Echolocation</a>
+                <a class="mobile-links-2" href="#Audio" alt="Audio">Audio</a>
+                <a class="mobile-links-2" href="#Specs" alt="Specs">Specs</a>
+                <a class="mobile-links-1" href="#" alt="Smartphones">Smartphones</a>
+                <a class="mobile-links-1" href="#" alt="Computing">Computing</a>
+                <a class="mobile-links-1" href="#" alt="Business Solutions">Business Solutions</a>
+                <a class="mobile-links-1" href="#" alt="Log In/ Sign Up">Log In/Sign Up</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="mobile-icon" src="./Icons/min menu.png"></a>
+        </div>
         <main>
             <section id="Home">
                 <div class="front-back-image-container">
                     <div class="front-back-image">
                         <img class="front-back-image image-order" src="Photos/front back.png" alt="TouchMi 4 MAX EDGE">
                     </div>
-                    <video id="video" class="video-embed" width="307px" height="655px" autoplay loop>
-                        <source src="./product-video/Minido.webm" type="video/webm">
-                        <source src="./product-video/Minido.mp4" type="video/mp4">
-                    </video>
                     <div class="landing-elements">
                         <div class="landing-text">
                             <p class="landing-text-1">TouchMi 4 MAX EDGE</p>
@@ -365,15 +389,10 @@
                         <div>
                             <div class="bottom-image-text-left-container">
                                 <div class="bottom-image-subtitle">
-                                    <h3 class="bottom-image-subtitle">Strength In Numbers</h3>
+                                    <h3 class="bottom-image-subtitle">The Headphone Jack: Today</h3>
                                 </div>
-                                <div class="bottom-image-text-blurb-left">
-                                    <p class="bottom-image-text-blurb-left"> Too much music, not enough ways to listen to it?</p> 
-                                    <p>Bluetooth headphones are expensive, face connectivity issues
-                                        and don't carry the same audio quality of their wired counterparts - so why get rid of them? Too many smartphones these days have ditched
-                                        the 3.5mm headphone jack for a minimalist design but here, at <b>E-Mesis Industries <sup style="font-size:0.5em;line-height:0;">&copy;</sup></b>
-                                        we favor quantity, over quality.
-                                    </p>
+                                <div class="video-embed">
+                                    <iframe id="video" width="675" height="309" src="https://www.youtube.com/embed/7davoSDgSHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>
                             <div class="bottom-image-right-container">
