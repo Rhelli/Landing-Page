@@ -24,23 +24,37 @@ PERSONAL OBJECTIVES
 
 SWOT ANALYSIS
   STRENGTHS
+    
     - Navbar on mobile and web works well
+    
     - Good implmentation of product photos and design
+    
     - Page spacers provide a pleasant break between pages
+    
     - 3 line specs boxes looks and works particularly well to convey information in a small amount of space
+    
     - Strong implementation of flexboxes throughout the webpage to symmetrically lay out the page
+    
     - Above average web design
    
    WEAKNESSES
+    
     - CSS code is bloated. A lot of repeating and modifying of code previously written in order to achieve goals.
+    
     - Too much writing for a product landing page. Should contain less writing with more succinct information.
+    
     - CSS & media queries should be attacked from the very beginning in order to reduce code quantity.
     
    OPPORTUNITIES
+    
     - Design from mobile from the get-go. Avoids having to re-design the page for a smaller screen which is headache inducing.
+    
     - Commit to DRY principles to avoid bloated code.
+    
     - Plan the content of the page a little better next time.
    
    THREATS
+    
     - Mobile is the future of web and most likely the way most people access web pages currently and in the future. Ensure that  webpages are designed for mobile FIRST before applying web design as reversing the process is both incredibly difficult and may also result in the webpage not acting exactly as intended when viewed on mobile.
+
     - Phones with 16 or more cameras
