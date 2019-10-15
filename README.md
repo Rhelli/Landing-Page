@@ -23,6 +23,7 @@ PERSONAL OBJECTIVES
 - Add a creative web design flair to the page to make it a little less dull. Less flat, lifeless colours, more gradients. Less single dimension element design, more inset and classic box shadows, etc.
 
 SWOT ANALYSIS
+  
   STRENGTHS
     
    - Navbar on mobile and web works well
