@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
     width: auto;
     padding: 0;
     margin: 0;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 .min-menu {
     position: absolute;
@@ -357,6 +357,7 @@ body::-webkit-scrollbar {
     margin: 0;
     padding: 0;
     z-index: 1;
+    pointer-events: none;
 }
 
 .front-back-image {
@@ -588,6 +589,7 @@ body::-webkit-scrollbar {
     height: 90vh;
     width: auto;
     z-index: 1;
+    pointer-events: none;
 }
 .mobile-right-image {
     display: none;
@@ -726,6 +728,7 @@ body::-webkit-scrollbar {
     height: 90vh;
     width: auto;
     z-index: 1;
+    pointer-events: none;
 }
 .back-image-text-container {
     display: flex;
@@ -835,6 +838,7 @@ body::-webkit-scrollbar {
     width: auto;
     padding: 0;
     margin: 0;
+    pointer-events: none;
 }
 .fingerprint-logo {
     display: block;
@@ -845,6 +849,7 @@ body::-webkit-scrollbar {
     width: auto;
     padding: 0;
     margin: 0;
+    pointer-events: none;
 }
 .online-logo {
     display: block;
@@ -855,6 +860,7 @@ body::-webkit-scrollbar {
     width: auto;
     padding: 0;
     margin: 0;
+    pointer-events: none;
 }
 .security-icons-text {
     display: block;
@@ -901,6 +907,7 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    pointer-events: none;
 }
 .mobile-top-image {
     display: none;
@@ -984,6 +991,7 @@ body::-webkit-scrollbar {
     transform: translateX(-50%);
     height: 65px;
     width: auto;
+    pointer-events: none;
 }
 .sonr-icons-text {
     display: block;
@@ -1028,6 +1036,7 @@ body::-webkit-scrollbar {
     transform: translateX(-50%);
     height: 65px;
     width: auto;
+    pointer-events: none;
 }
 .future-sonr-icons-text {
     display: block;
@@ -1164,6 +1173,7 @@ body::-webkit-scrollbar {
     transform: translateX(-50%);
     scroll-snap-align: start;
     z-index: 1;
+    pointer-events: none;
 }
 
 .left-image-container {
@@ -1315,6 +1325,7 @@ body::-webkit-scrollbar {
     margin: 0;
     padding: 0;
     z-index: 1;
+    pointer-events: none;
 }
 .index-asterisk {
     display: block;
@@ -1376,6 +1387,7 @@ footer {
         transform: translateX(-50%);
         padding: 0;
         margin: 0;
+        pointer-events: none;
     }
     .footer-address {
         display: block;
