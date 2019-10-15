@@ -1792,6 +1792,7 @@ footer {
         width: 100vw;
         z-index: 3;
         margin: 0;
+        overflow: hidden;
     }
         .mobile-front-back-image-container {
             display: flex;
@@ -1856,11 +1857,10 @@ footer {
         .landing-blurb {
             display: block;
             position: relative;
-            left: 5vw;
-            max-width: 100vw;
+            max-width: 95vw;
             font-size: 1.3em;
             padding: 0;
-            margin: 2vh 2vw;
+            margin: 2vh 1vw;
             white-space: normal;
             overflow-wrap: break-word;
             word-wrap: break-word;
@@ -1923,6 +1923,7 @@ footer {
         margin: 0;
         flex-flow: column nowrap;
         align-items: flex-start;
+        overflow: hidden;
 
     }
         .right-image-text-container {
@@ -2038,10 +2039,11 @@ footer {
         flex-flow: column nowrap;
         align-items: center;
         align-content: flex-start;
-        height: 155vh;
+        height: 160vh;
         width: 100vw;
         max-width: 100vw;
         margin: 0;
+        overflow: hidden;
     }
         .back-image-sub-container {
             display: block;
@@ -2098,7 +2100,7 @@ footer {
             }
             h2.back-image-security-title {
                 font-size: 1.8em;
-                width: 95vw;
+                width: 97vw;
             }
             .back-image-security-blurb {
                 width: 100vw;
@@ -2130,9 +2132,10 @@ footer {
     /* Top Image Container */
     .top-image-container {
         flex-flow: column nowrap;
-        height: 130vh;
+        height: 135vh;
         width: 100vw;
         margin: 0;
+        overflow: hidden;
     }
         .top-image-text-main-container {
             display: block;
@@ -2230,10 +2233,11 @@ footer {
     .bottom-image-container {
         display: flex;
         flex-flow: column nowrap;
-        height: 115vh;
+        height: 120vh;
         width: 100vw;
         max-width: 100vw;
         margin: 0;
+        overflow: hidden;
     }
         .bottom-image-title {
             display: block;
@@ -2311,7 +2315,8 @@ footer {
     .mobile-left-image-container {
         display: flex;
         width: 100vw; 
-        height: 100vh;
+        height: 110vh;
+        overflow: hidden;
     }
         .mobile-left-image-specs-left-container {
             display: flex;
@@ -2363,15 +2368,16 @@ footer {
         justify-content: flex-start;
         margin: 0;
         right: auto;
-        height: 110vh;
+        height: 120vh;
         width: 100vw;
         max-width: 100vw;
+        overflow: hidden;
     }
     .left-image-specs-left-container {
         display: none;
     }
     .left-image-photo-container {
-        width: 20vw;
+        width: 15vw;
         position: relative;
         right: 10vw;
         top: 50%;
@@ -2380,7 +2386,7 @@ footer {
     .left-image {
         width: 20vw;
         position: absolute;
-        right: 10vw;
+        right: 20vw;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -2434,7 +2440,8 @@ footer {
 footer {
     flex-flow: column nowrap;
     width: 100vw;
-    height: 200vh;
+    height: 210vh;
+    overflow: hidden;
 }
     .footer-company-container {
         display: block;
